@@ -197,24 +197,24 @@ public class GameWorld {
      */
     private int getBackgroundFromLocation(){
     	switch (Game.currentLocation){
-    	case "The Catalyst":
-    		return 8;
-    	case "Computer Science":
-    		return 0;
-    	case "Theatre, Film + Television":
-    		return 7;
-    	case "Law + Management School":
-    	    return 1;
-    	case "Goodricke College":
-    		return 9;
-    	case "Ron Cooke Hub":
-    		return 2;
-    	case "The Lake":
-    		return 10;
-    	case "Langwith College":
-    		return 4;
-    	case "Constantine College":
-    		return 5;
+            case CATALYST:
+                return 8;
+            case CS:
+                return 0;
+            case TFTV:
+                return 7;
+            case LMB:
+                return 1;
+            case GOODRICKE:
+                return 9;
+            case RCH:
+                return 2;
+            case LAKE:
+                return 10;
+            case LANGWITH:
+                return 4;
+            case CONSTANTINE:
+                return 5;
     	}
     	return 6;
     }

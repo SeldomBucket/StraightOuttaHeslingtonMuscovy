@@ -4,6 +4,7 @@ gameworld refernces removed in assessment 3 - change 5
 package com.mygdx.game;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 import com.badlogic.gdx.maps.MapProperties;
 import com.badlogic.gdx.maps.tiled.TiledMap;
@@ -22,7 +23,7 @@ public class Level {
     public boolean[][] collisionMap;
     // Assessment 3 Change (15)
     public boolean[][] waterMap;
-    public String[][] locationMap;
+    public Location[][] locationMap;
     // Assessment 3 End
     public Player player;
     public ArrayList<Character> characters;
@@ -50,7 +51,7 @@ public class Level {
         
         collisionMap = new boolean[mapWidth][mapHeight];
         // Assessment 3 Change (15)
-        locationMap = new String[mapWidth][mapHeight];
+        locationMap = new Location[mapWidth][mapHeight];
         waterMap = new boolean[mapWidth][mapHeight];
         TiledMapTileLayer layer = (TiledMapTileLayer) map.getLayers().get(0);
         // Assessment 3 Change (15)
@@ -66,11 +67,30 @@ public class Level {
                 // For current location
                 MapProperties mapLocationProperties = locationLayer.getCell(x, y).getTile().getProperties();
             	if(mapLocationProperties.containsKey("Location")){
-            		locationMap[x][y] = (String) mapLocationProperties.get("Location");
+                    if(mapLocationProperties.get("Location")=="Computer Science"){
+                        locationMap[x][y]= Location.CS;
+                    }else if(mapLocationProperties.get("Location")=="Theatre, Film + Television"){
+                        locationMap[x][y]= Location.TFTV;
+                    }else if(mapLocationProperties.get("Location")=="The Catalyst"){
+                        locationMap[x][y]= Location.CATALYST;
+                    }else if(mapLocationProperties.get("Location")=="Law and Management School"){
+                        locationMap[x][y]= Location.LMB;
+                    }else if(mapLocationProperties.get("Location")=="Ron Cooke Hub"){
+                        locationMap[x][y]= Location.RCH;
+                    }else if(mapLocationProperties.get("Location")=="Goodricke College"){
+                        locationMap[x][y]= Location.GOODRICKE;
+                    }else if(mapLocationProperties.get("Location")=="Langwith College"){
+                        locationMap[x][y]= Location.LANGWITH;
+                    }else if(mapLocationProperties.get("Location")=="Constantine College"){
+                        locationMap[x][y]= Location.CONSTANTINE;
+                    }else if(mapLocationProperties.get("Location")=="The Lake"){
+                        locationMap[x][y]= Location.LAKE;
+                    }
+            		//locationMap[x][y] = (String) mapLocationProperties.get("Location");
 //            		System.out.println(locationMap[x][y]);
             	}
             	else{
-            		locationMap[x][y] = "Somewhere on Hes-East";
+            		locationMap[x][y] = Location.SOMEWHERE;
             	}
             }
             

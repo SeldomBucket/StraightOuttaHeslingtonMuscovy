@@ -31,7 +31,7 @@ public class Game extends com.badlogic.gdx.Game {
 
 	//ASSESSMENT 3 change (11)
 	public static int pointsScore=0;
-	public static String currentLocation = "";
+	public static Location currentLocation = Location.SOMEWHERE;
 	public ObjectiveManager objectiveManager = new ObjectiveManager(this);
 	//END ASSESSMENT 3 change
 	public static float masterVolume = 0.1f;

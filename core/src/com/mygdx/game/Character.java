@@ -76,7 +76,7 @@ public abstract class Character {
         //ASSESSMENT 3 change (13)
     	if(this instanceof Player) {
 //    		System.out.println("Before: " + Game.currentLocation);
-    		Game.currentLocation = level.locationMap[(int) getCurrentTile().x][(int) getCurrentTile().y];
+            Game.currentLocation = level.locationMap[(int) getCurrentTile().x][(int) getCurrentTile().y];
 //        	System.out.println("After: " + Game.currentLocation);
     	}
     	//END ASSESSMENT 3 change
