@@ -73,13 +73,6 @@ public abstract class Character {
      * @param delta The time since the last frame was rendered.
      */
     public void update(float delta) {
-        //ASSESSMENT 3 change (13)
-    	if(this instanceof Player) {
-//    		System.out.println("Before: " + Game.currentLocation);
-            Game.currentLocation = level.locationMap[(int) getCurrentTile().x][(int) getCurrentTile().y];
-//        	System.out.println("After: " + Game.currentLocation);
-    	}
-    	//END ASSESSMENT 3 change
     	
         if (level.stopInput){
 
