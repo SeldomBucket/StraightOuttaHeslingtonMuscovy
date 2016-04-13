@@ -21,7 +21,7 @@ public class UICurrentLocation extends UIComponent {
         this.height=20;
         this.x= Gdx.graphics.getWidth()-width;
         this.y= 0;
-        getLocation();
+        //getLocation();
         this.messageBox = new UIMessageBox(messagePrepend+location,this.x,this.y,this.width,this.height,10,10);
     }
     private void getLocation(){
@@ -66,7 +66,7 @@ public class UICurrentLocation extends UIComponent {
      * Called once per frame to render the location.
      */
     public void render(SpriteBatch batch, NinePatch patch){
-        getLocation();
+        //getLocation();
         messageBox.setMessage(messagePrepend+location);
         messageBox.render(batch,patch);
     }
