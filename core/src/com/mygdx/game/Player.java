@@ -86,6 +86,7 @@ public class Player extends Character {
                 interactingNPC = (NPC) level.getCharacterAt(getCurrentTile().x + 1, getCurrentTile().y);
                 break;
         }
+        // Assessment 4 Change (S1)
         Game.currentLocation = level.locationMap[(int) getCurrentTile().x][(int) getCurrentTile().y];
     }
     

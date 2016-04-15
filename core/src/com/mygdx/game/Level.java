@@ -63,33 +63,33 @@ public class Level {
                 
             	// For waterMap
             	waterMap[x][y] = layer.getCell(x, y).getTile().getProperties().containsKey("WaterFrame");
-            	
+
+            	// Assessment 4 Change (S1)
                 // For current location
                 MapProperties mapLocationProperties = locationLayer.getCell(x, y).getTile().getProperties();
             	if(mapLocationProperties.containsKey("Location")){
-                    if(mapLocationProperties.get("Location")=="Computer Science"){
+                    if(mapLocationProperties.get("Location").equals("Computer Science")){
                         locationMap[x][y]= Location.CS;
-                    }else if(mapLocationProperties.get("Location")=="Theatre, Film + Television"){
+                    }else if(mapLocationProperties.get("Location").equals("Theatre, Film + Television")){
                         locationMap[x][y]= Location.TFTV;
-                    }else if(mapLocationProperties.get("Location")=="The Catalyst"){
+                    }else if(mapLocationProperties.get("Location").equals("The Catalyst")){
                         locationMap[x][y]= Location.CATALYST;
-                    }else if(mapLocationProperties.get("Location")=="Law and Management School"){
+                    }else if(mapLocationProperties.get("Location").equals("Law and Management School")){
                         locationMap[x][y]= Location.LMB;
-                    }else if(mapLocationProperties.get("Location")=="Ron Cooke Hub"){
+                    }else if(mapLocationProperties.get("Location").equals("Ron Cooke Hub")){
                         locationMap[x][y]= Location.RCH;
-                    }else if(mapLocationProperties.get("Location")=="Goodricke College"){
+                    }else if(mapLocationProperties.get("Location").equals("Goodricke College")){
                         locationMap[x][y]= Location.GOODRICKE;
-                    }else if(mapLocationProperties.get("Location")=="Langwith College"){
+                    }else if(mapLocationProperties.get("Location").equals("Langwith College")){
                         locationMap[x][y]= Location.LANGWITH;
-                    }else if(mapLocationProperties.get("Location")=="Constantine College"){
+                    }else if(mapLocationProperties.get("Location").equals("Constantine College")){
                         locationMap[x][y]= Location.CONSTANTINE;
-                    }else if(mapLocationProperties.get("Location")=="The Lake"){
+                    }else if(mapLocationProperties.get("Location").equals("The Lake")){
                         locationMap[x][y]= Location.LAKE;
                     }
             		//locationMap[x][y] = (String) mapLocationProperties.get("Location");
-//            		System.out.println(locationMap[x][y]);
-            	}
-            	else{
+            		//System.out.println(mapLocationProperties.get("Location"));
+            	}else{
             		locationMap[x][y] = Location.SOMEWHERE;
             	}
             }

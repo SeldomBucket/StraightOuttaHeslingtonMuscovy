@@ -21,11 +21,12 @@ public class UICurrentLocation extends UIComponent {
         this.height=20;
         this.x= Gdx.graphics.getWidth()-width;
         this.y= 0;
-        //getLocation();
+        getLocation();
         this.messageBox = new UIMessageBox(messagePrepend+location,this.x,this.y,this.width,this.height,10,10);
     }
+    // Assessment 4 Change (S1)
     private void getLocation(){
-        if (!Game.currentLocation.equals(null)){
+        if (!(Game.currentLocation == null)){
             switch (Game.currentLocation) {
                 case CATALYST:
                     location = "The Catalyst";
@@ -66,7 +67,7 @@ public class UICurrentLocation extends UIComponent {
      * Called once per frame to render the location.
      */
     public void render(SpriteBatch batch, NinePatch patch){
-        //getLocation();
+        getLocation();
         messageBox.setMessage(messagePrepend+location);
         messageBox.render(batch,patch);
     }
