@@ -28,6 +28,8 @@ public class GameWorld {
     private BattleParameters battleParams;
     private int battleChance;
 
+    private int speedCheatState, powerCheatState;
+
     /**
      * Constructor for the GameWorld generates a new level and adds the characters to be used in the game.
      * The initial state for the game is FREEROAM.
@@ -54,6 +56,8 @@ public class GameWorld {
         enemyDuck2.addSkill(0);
         battleParams.addEnemy(enemyDuck);
         battleParams.addEnemy(enemyDuck2);
+        speedCheatState = 0; //S A N I C
+        powerCheatState = 0; //up up down down left right left right B A
     }
 
     /**
@@ -167,7 +171,7 @@ public class GameWorld {
             case BATTLE:
                 if (game.wonBattle) {
                     uiManager.addNotification("You won the battle!");
-                    //ASSESSMENT 3 chnages (10)
+                    //ASSESSMENT 3 changes (10)
 //                    game.objectiveManager.battleWon(uiManager);
                 } else {
 //                    Game.party.setHealths(1);
@@ -177,6 +181,19 @@ public class GameWorld {
                     //END ASSESSMENT 3 changes
                 }
                 gameState = GameState.FREEROAM;
+                break;
+            case CHEAT_ENTRY:
+                if (InputHandler.isEnterJustPressed()){
+                    if (speedCheatState == 5){
+                        //DO THE SPEED CHEAT
+                    }
+                    if (speedCheatState == 10){
+                        //DO THE POWER CHEAT
+                    }
+                    gameState = GameState.FREEROAM;
+                }else{
+
+                }
                 break;
         }
     }
