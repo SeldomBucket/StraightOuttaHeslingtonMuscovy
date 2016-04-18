@@ -56,7 +56,7 @@ public class GameWorld {
         enemyDuck2.addSkill(0);
         battleParams.addEnemy(enemyDuck);
         battleParams.addEnemy(enemyDuck2);
-        speedCheatState = 0; //S A N I C
+        speedCheatState = 0; //S O N I C
         powerCheatState = 0; //up up down down left right left right B A
     }
 
@@ -128,7 +128,8 @@ public class GameWorld {
                     }
                     //END ASSESSMENT 3 change
                 // ASSESSMENT 3 change (14)
-                    else if (InputHandler.isMJustPressed()){
+                else
+                    if (InputHandler.isMJustPressed()){
                     	interactingNPC = level.player.interactingNPC;
                         level.stopInput = true;
                         if (interactingNPC != null) {
@@ -139,6 +140,11 @@ public class GameWorld {
                             gameState = GameState.MAP;
                         }
                       //END ASSESSMENT 3 change
+                    }
+                else
+                    if (InputHandler.isGraveJustPressed()){
+                        gameState = GameState.CHEAT_ENTRY;
+                        level.stopInput = true;
                     }
                 break;
 
@@ -185,14 +191,104 @@ public class GameWorld {
             case CHEAT_ENTRY:
                 if (InputHandler.isEnterJustPressed()){
                     if (speedCheatState == 5){
-                        //DO THE SPEED CHEAT
+                        level.player.activateSpeedCheat();
+                        uiManager.addNotification("SPEED CHEAT ACTIVATED FOR 30s");
+                        speedCheatState = 0;
                     }
-                    if (speedCheatState == 10){
+                    if (powerCheatState == 10){
                         //DO THE POWER CHEAT
                     }
                     gameState = GameState.FREEROAM;
                 }else{
-
+                    if(!InputHandler.isOtherJustPressed()){
+                        switch (speedCheatState){
+                            case 0:
+                                if(InputHandler.isDownJustPressed()){
+                                    speedCheatState +=1;
+                                    uiManager.addNotification("SPEED CHEAT STATE 1");
+                                }
+                                break;
+                            case 1:
+                                if(InputHandler.isOJustPressed()){
+                                    speedCheatState +=1;
+                                    uiManager.addNotification("SPEED CHEAT STATE 2");
+                                }
+                                break;
+                            case 2:
+                                if(InputHandler.isNJustPressed()){
+                                    speedCheatState +=1;
+                                    uiManager.addNotification("SPEED CHEAT STATE 3");
+                                }
+                                break;
+                            case 3:
+                                if(InputHandler.isIJustPressed()){
+                                    speedCheatState +=1;
+                                    uiManager.addNotification("SPEED CHEAT STATE 4");
+                                }
+                                break;
+                            case 4:
+                                if(InputHandler.isCJustPressed()){
+                                    speedCheatState +=1;
+                                    uiManager.addNotification("SPEED CHEAT STATE 5");
+                                }
+                                break;
+                        }
+                        switch (powerCheatState){
+                            case 0:
+                                if(InputHandler.isUpArrowJustPressed()){
+                                    powerCheatState +=1;
+                                }
+                                break;
+                            case 1:
+                                if(InputHandler.isUpArrowJustPressed()){
+                                    powerCheatState +=1;
+                                }
+                                break;
+                            case 2:
+                                if(InputHandler.isDownArrowJustPressed()){
+                                    powerCheatState +=1;
+                                }
+                                break;
+                            case 3:
+                                if(InputHandler.isDownArrowJustPressed()){
+                                    powerCheatState +=1;
+                                }
+                                break;
+                            case 4:
+                                if(InputHandler.isLeftArrowJustPressed()){
+                                    powerCheatState +=1;
+                                }
+                                break;
+                            case 5:
+                                if(InputHandler.isRightArrowJustPressed()){
+                                    powerCheatState +=1;
+                                }
+                                break;
+                            case 6:
+                                if(InputHandler.isLeftArrowJustPressed()){
+                                    powerCheatState +=1;
+                                }
+                                break;
+                            case 7:
+                                if(InputHandler.isRightArrowJustPressed()){
+                                    powerCheatState +=1;
+                                }
+                                break;
+                            case 8:
+                                if(InputHandler.isBJustPressed()){
+                                    powerCheatState +=1;
+                                }
+                                break;
+                            case 9:
+                                if(InputHandler.isLeftJustPressed()){
+                                    powerCheatState +=1;
+                                }
+                                break;
+                        }
+                    }else{
+                        speedCheatState = 0;
+                        powerCheatState = 0;
+                    }
                 }
                 break;
         }

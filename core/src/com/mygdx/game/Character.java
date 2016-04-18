@@ -43,6 +43,11 @@ public abstract class Character {
     //ASSESSMENT 3 ADDED LINE (15)
     protected boolean isSwimming = false;
     //ASSESSMENT 3 END LINE
+
+    //ASSESSMENT 4 CHANGE (S1)
+    protected boolean speedCheatActive = false;
+    private float speedCheatTime = 0;
+    //ASSESSMENT 4 END LINE
     
 //  Map information for collision detection.
     protected Level level;
@@ -83,7 +88,23 @@ public abstract class Character {
         } else {
             updateTransitioning(delta);
         }
+        //ASSESSMENT 4 CHANGE (S1)
+        if(isSpeedCheatActive()){
+            updateSpeedCheat(delta);
+        }
         
+    }
+
+    /**
+     * Function ADDED for ASSESSMENT 4 (S1)
+     * @param delta The time since the last frame was rendered.
+     */
+    private void updateSpeedCheat(float delta){
+        if (speedCheatTime<=0){
+            speedCheatActive = false;
+        }else{
+            speedCheatTime -= delta;
+        }
     }
 
     /**
@@ -256,11 +277,32 @@ public abstract class Character {
     public void updateSpeed(){
     	if(isFlying()){
     		transitionSpeed = 0.05f;
+            if (speedCheatActive){
+                transitionSpeed = 0.02f;
+            }
     	}else if (isSwimming){
     		transitionSpeed = 0.1f;
-    	}else{
+            if (speedCheatActive){
+                transitionSpeed = 0.05f;
+            }
+        }else{
     		transitionSpeed = 0.25f;
+            if (speedCheatActive){
+                transitionSpeed = 0.1f;
+            }
     	}
     }
 
+    public boolean isSpeedCheatActive() {
+        return speedCheatActive;
+    }
+
+    public void setSpeedCheatActive(boolean speedCheatActive) {
+        this.speedCheatActive = speedCheatActive;
+    }
+
+    public void activateSpeedCheat(){
+        setSpeedCheatActive(true);
+        speedCheatTime = 30;
+    }
 }
