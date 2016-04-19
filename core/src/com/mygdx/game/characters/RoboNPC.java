@@ -61,7 +61,7 @@ public class RoboNPC extends NPC {
         //Enemy ducks
         List<Integer> emptyList = new ArrayList<Integer>();
         //ASSESSMENT 3 change (17)
-        Agent enemyDuck = new Agent("Robo Duck", Agent.AgentType.ENEMY,new Statistics(150,300,8,2,3,3,3,3,3),emptyList,new CurrentEquipment(0,0,0,0,0),1);
+        Agent enemyDuck = new Agent("Robo Duck", Agent.AgentType.ENEMY,new Statistics(150,300,8,2,3,3,3,3,3),emptyList,new CurrentEquipment(0,0,0,0,0),1, false);
         //END ASSESSMENT 3 change
         enemyDuck.addSkill(4);
 

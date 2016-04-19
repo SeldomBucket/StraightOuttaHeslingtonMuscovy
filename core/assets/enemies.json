@@ -21,7 +21,8 @@
 	"equipment":{
 		"equipSlots":[0,0,0,0,0]
 		},
-	"texture": 2
+	"texture": 2,
+	"isDemented": false
 	},
 	{
 	"name":"Radiated Duck",
@@ -45,7 +46,8 @@
 	"equipment":{
 		"equipSlots":[0,0,0,0,0]
 		},
-	"texture": 3
+	"texture": 3,
+	"isDemented": false
 	},
 	{
 	"name":"Scarred Duck",
@@ -69,7 +71,8 @@
 	"equipment":{
 		"equipSlots":[0,0,0,0,0]
 		},
-	"texture": 4
+	"texture": 4,
+	"isDemented": false
 	},
 	{
 	"name":"Undead Duck",
@@ -93,7 +96,8 @@
 	"equipment":{
 		"equipSlots":[0,0,0,0,0]
 		},
-	"texture": 5
+	"texture": 5,
+	"isDemented": false
 	}
 	],
 	"consumables": [0,1,2],

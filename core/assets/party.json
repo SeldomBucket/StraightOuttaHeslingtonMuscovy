@@ -20,8 +20,9 @@
 	"skills":[17, 0],
 	"equipment":{
 		"equipSlots":[1,0,0,0,0]
-		}
-	},
+		},
+	"isDemented": false
+},
 	{
 	"name":"Pyro-duck",
 	"type":"FRIENDLY",
@@ -43,7 +44,8 @@
 	"skills":[17, 1],
 	"equipment":{
 		"equipSlots":[1,0,0,0,0]
-		}
+		},
+	"isDemented": false
 	},
 	{
 	"name":"Cryo-duck",
@@ -66,7 +68,8 @@
 	"skills":[17, 2],
 	"equipment":{
 		"equipSlots":[0,0,0,0,0]
-		}
+		},
+	"isDemented": false
 	},
 	{
 	"name":"Medic duck",
@@ -89,7 +92,8 @@
 	"skills":[17, 3],
 	"equipment":{
 		"equipSlots":[0,0,0,0,0]
-		}
+		},
+	"isDemented": false
 	}	
 	],
 	"consumables": [],
