@@ -36,9 +36,8 @@ public class Game extends com.badlogic.gdx.Game {
 	//END ASSESSMENT 3 change
 	public static float masterVolume = 0.1f;
 
-	//Assessment 4 change (S3)
+	//Assessment 4 change (S3)- initialise and set enum
 	public static DementedWaterFowlMode dementedWaterFowlMode = DementedWaterFowlMode.OFF;
-	//Change end
 	
 	private WorldScreen worldScreen;
 	private BattleScreen battleScreen;
@@ -139,7 +138,7 @@ public class Game extends com.badlogic.gdx.Game {
 
 	//Assessment 4 change (S3)
 	//Accessor method for dementedWaterFowlMode
-	public DementedWaterFowlMode getDementedWaterFowlMode() {
+	public static DementedWaterFowlMode getDementedWaterFowlMode() {
 		return(dementedWaterFowlMode);
 	}
 

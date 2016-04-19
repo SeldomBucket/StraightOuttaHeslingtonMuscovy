@@ -45,7 +45,7 @@ public class Player extends Character {
         runningTime += delta;
         //ASSESSMENT 3 change (15)
         float t = runningTime / transitionSpeed;
-        //END ASSESSMET 3 change
+        //END ASSESSMENT 3 change
         getAbsPos().set(oldPos.x + (targetPos.x - oldPos.x) * t, oldPos.y + (targetPos.y - oldPos.y) * t);
         if (t >= 1) {
             setState(CharacterState.STATIONARY);

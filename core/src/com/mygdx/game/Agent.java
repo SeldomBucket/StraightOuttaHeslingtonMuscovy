@@ -24,6 +24,7 @@ public class Agent implements Comparable<Agent>{
     //Assessment 4 change (S3)
     //adding bool so game can determine if an agent is demented or not
     private Boolean isDemented;
+    //Change end
 
     /**
      * Implements the compareTo function required when implementing the Comparable abstract class.
@@ -170,4 +171,5 @@ public class Agent implements Comparable<Agent>{
     public void setDemented(Boolean demented){
         this.isDemented = demented;
     }
+    //Change end
 }

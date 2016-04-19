@@ -3,9 +3,11 @@ package com.mygdx.game;
 //ASSESSMENT 3 change (6)
 import static com.mygdx.game.Level.TILE_SIZE;
 
-
-
 import java.util.Comparator;
+
+//Assessment 4 change (S3)
+import java.util.Random;
+//change end
 
 import com.badlogic.gdx.math.Vector2;
 import com.mygdx.game.input.InputHandler;
@@ -23,6 +25,13 @@ public abstract class Character {
     public final float WAIT_PERIOD = 0.15f;
 
     public static final Vector2 CHARACTER_SIZE = new Vector2(13,21);
+
+    //Assessment 4 change (S3)
+    public Game game;
+    public Random rand = new Random();
+    public int ranInt;
+    private Boolean playerDemented;
+    //Change end
 
 //  Player position & orientation information
     private Vector2 currentTile;
@@ -134,6 +143,24 @@ public abstract class Character {
     	isSwimming = level.waterMap[(int) getCurrentTile().x][(int) getCurrentTile().y];
     	updateSpeed();
     	if (getDirection() == requestedDirection) {
+            //Assessment 4 Change (S3)
+            if (Game.getDementedWaterFowlMode() == Game.DementedWaterFowlMode.ON) {
+                playerDemented = false;
+                //check if any player character is demented
+                for (int i = 0; i < Game.party.size(); i++) {
+                    if (Game.party.getMember(i).getDemented()) {
+                        playerDemented = true;
+                        break;
+                    }
+                }
+                if (playerDemented) {
+                    //trigger random movement with a 10% chance if a player character is demented
+                    if (rand.nextInt(10) == 0) {
+                        requestedDirection = Direction.values()[rand.nextInt(3)];
+                        setDirection(requestedDirection);
+                    }
+                }
+            }
             switch (requestedDirection) {
                 case UP:
                     if (!level.collisionMap[(int) getCurrentTile().x][(int) getCurrentTile().y + 1]) {
