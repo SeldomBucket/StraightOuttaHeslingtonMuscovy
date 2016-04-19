@@ -92,13 +92,19 @@ public class GameWorld {
                     for(int i=0;i<random.nextInt(3)+1;i++){
                         Agent thisAgent = Game.enemies.getMember(random.nextInt(Game.enemies.size()));
                         Statistics thisAgentStats = thisAgent.getStats();
-                        Statistics newStats = new Statistics(thisAgentStats.getMaxHP(),thisAgentStats.getMaxMP(),thisAgentStats.getSpeed(),thisAgentStats.getStrength(),thisAgentStats.getDexterity(),thisAgentStats.getIntelligence(),thisAgentStats.getBaseArmourVal(),thisAgentStats.getExperience(),thisAgentStats.getCurrentLevel());
+                        Statistics newStats;
+                        if(level.player.isPowerCheatActive()){
+                            newStats = new Statistics(thisAgentStats.getMaxHP(),thisAgentStats.getMaxMP(),thisAgentStats.getSpeed(),thisAgentStats.getStrength()+2,thisAgentStats.getDexterity()+2,thisAgentStats.getIntelligence()+2,thisAgentStats.getBaseArmourVal(),thisAgentStats.getExperience(),thisAgentStats.getCurrentLevel());
+                        }else{
+                            newStats = new Statistics(thisAgentStats.getMaxHP(),thisAgentStats.getMaxMP(),thisAgentStats.getSpeed(),thisAgentStats.getStrength(),thisAgentStats.getDexterity(),thisAgentStats.getIntelligence(),thisAgentStats.getBaseArmourVal(),thisAgentStats.getExperience(),thisAgentStats.getCurrentLevel());
+                        }
                         params.addEnemy(new Agent(thisAgent.getName(), thisAgent.getType(), newStats, thisAgent.getSkills(), thisAgent.getCurrentEquipment(), thisAgent.getTexture()));
                     }
 
                     battleParams = params;
                     Assets.worldMusic.stop();//Stop the worldMusic
                     Assets.sfx_battleStart.play(Game.masterVolume);
+
                     gameState = GameState.BATTLE_DIALOGUE;
                     level.stopInput = true;
                 } else
@@ -177,6 +183,9 @@ public class GameWorld {
             case BATTLE:
                 if (game.wonBattle) {
                     uiManager.addNotification("You won the battle!");
+                    //ASSESSMENT 4 CHANGE (S1)
+                    level.player.deactivatePowerCheat();
+                    //ASSESSMENT 4 CHANGE END
                     //ASSESSMENT 3 changes (10)
 //                    game.objectiveManager.battleWon(uiManager);
                 } else {
@@ -196,6 +205,9 @@ public class GameWorld {
                         speedCheatState = 0;
                     }
                     if (powerCheatState == 10){
+                        uiManager.addNotification("POWER CHEAT ACTIVATED UNTIL END OF NEXT BATTLE");
+                        powerCheatState = 0;
+                        level.player.activatePowerCheat();
                         //DO THE POWER CHEAT
                     }
                     gameState = GameState.FREEROAM;
@@ -205,31 +217,26 @@ public class GameWorld {
                             case 0:
                                 if(InputHandler.isDownJustPressed()){
                                     speedCheatState +=1;
-                                    uiManager.addNotification("SPEED CHEAT STATE 1");
                                 }
                                 break;
                             case 1:
                                 if(InputHandler.isOJustPressed()){
                                     speedCheatState +=1;
-                                    uiManager.addNotification("SPEED CHEAT STATE 2");
                                 }
                                 break;
                             case 2:
                                 if(InputHandler.isNJustPressed()){
                                     speedCheatState +=1;
-                                    uiManager.addNotification("SPEED CHEAT STATE 3");
                                 }
                                 break;
                             case 3:
                                 if(InputHandler.isIJustPressed()){
                                     speedCheatState +=1;
-                                    uiManager.addNotification("SPEED CHEAT STATE 4");
                                 }
                                 break;
                             case 4:
                                 if(InputHandler.isCJustPressed()){
                                     speedCheatState +=1;
-                                    uiManager.addNotification("SPEED CHEAT STATE 5");
                                 }
                                 break;
                         }

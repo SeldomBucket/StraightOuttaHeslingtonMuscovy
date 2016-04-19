@@ -47,6 +47,8 @@ public abstract class Character {
     //ASSESSMENT 4 CHANGE (S1)
     protected boolean speedCheatActive = false;
     private float speedCheatTime = 0;
+
+    protected boolean powerCheatActive = false;
     //ASSESSMENT 4 END LINE
     
 //  Map information for collision detection.
@@ -92,7 +94,7 @@ public abstract class Character {
         if(isSpeedCheatActive()){
             updateSpeedCheat(delta);
         }
-        
+        //ASSESSMENT 4 CHANGE END
     }
 
     /**
@@ -292,7 +294,7 @@ public abstract class Character {
             }
     	}
     }
-
+    //ASSESSMENT 4 CHANGE (S1)
     public boolean isSpeedCheatActive() {
         return speedCheatActive;
     }
@@ -305,4 +307,21 @@ public abstract class Character {
         setSpeedCheatActive(true);
         speedCheatTime = 30;
     }
+
+    public boolean isPowerCheatActive() {
+        return powerCheatActive;
+    }
+
+    public void setPowerCheatActive(boolean powerCheatActive) {
+        this.powerCheatActive = powerCheatActive;
+    }
+
+    public void activatePowerCheat(){
+        setPowerCheatActive(true);
+    }
+    public void deactivatePowerCheat(){
+        setPowerCheatActive(false);
+    }
+
+    //ASSESSMENT 4 CHANGE END
 }
