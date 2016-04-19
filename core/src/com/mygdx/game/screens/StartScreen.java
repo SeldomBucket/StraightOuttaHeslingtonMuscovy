@@ -28,6 +28,10 @@ public class StartScreen extends ScreenAdapter {
         this.game = game;
     }
 
+    //Assessment 4 change (S3)
+    private String waterFowlMessage = "PRESS 'Q' TO TOGGLE DEMENTED WATERFOWL MODE ON/OFF: ";
+    //Change end
+
     public void show() {
         fadeInCounter = 1f;
         runningTime = 0;
@@ -47,11 +51,19 @@ public class StartScreen extends ScreenAdapter {
             fadeInCounter = 0;
         }
         black.fill();
+
+        //Assessment 4 change (num)
+        //Added render lines for demented waterfowl mode text
         if (runningTime %1 > 0.5f) {
-            Assets.consolas22.draw(batch, new GlyphLayout(Assets.consolas22, START_MESSAGE, Color.GRAY, Gdx.graphics.getWidth(), Align.center, false), 0, 100);
+            Assets.consolas22.draw(batch, new GlyphLayout(Assets.consolas22, START_MESSAGE, Color.GRAY, Gdx.graphics.getWidth(), Align.center, false), 0, 200);
+            Assets.consolas22.draw(batch, new GlyphLayout(Assets.consolas22, waterFowlMessage, Color.GRAY, Gdx.graphics.getWidth(), Align.center, false), 0, 150);
         } else {
-            Assets.consolas22.draw(batch, new GlyphLayout(Assets.consolas22, START_MESSAGE, Color.WHITE, Gdx.graphics.getWidth(), Align.center, false), 0, 100);
+            Assets.consolas22.draw(batch, new GlyphLayout(Assets.consolas22, START_MESSAGE, Color.WHITE, Gdx.graphics.getWidth(), Align.center, false), 0, 200);
+            Assets.consolas22.draw(batch, new GlyphLayout(Assets.consolas22, waterFowlMessage, Color.WHITE, Gdx.graphics.getWidth(), Align.center, false), 0, 150);
+
         }
+        //Change end
+
         //ASSESSMENT 3 change (1)
         Texture blackTexture = new Texture(black);
         batch.draw(blackTexture,0,0);
@@ -70,5 +82,13 @@ public class StartScreen extends ScreenAdapter {
         if (InputHandler.isActJustPressed()) {
             game.newWorldScreen();
         }
+        //Assessment 4 change (num)
+        //Handler for toggling demented waterfowl mode on/off
+        if (InputHandler.isEscJustPressed()) {
+            game.setDementedWaterFowlMode();
+        }
+        //Updater for demented waterfowl text
+        waterFowlMessage = "PRESS 'Q' TO TOGGLE DEMENTED WATERFOWL MODE ON/OFF: " + game.getDementedWaterFowlMode();
+        //Change end
     }
 }
