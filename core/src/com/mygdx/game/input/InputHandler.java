@@ -287,14 +287,14 @@ public class InputHandler {
                 inputJustPressed = true;
             }
 
-            downArrowPressed = false;
-            downArrowJustPressed = false;
+            rightArrowPressed = false;
+            rightArrowJustPressed = false;
             if (Gdx.input.isKeyPressed(RIGHT_ARROW)) {
-                downArrowPressed = true;
+                rightArrowPressed = true;
                 inputPressed = true;
             }
             if (Gdx.input.isKeyJustPressed(RIGHT_ARROW)) {
-                downArrowJustPressed = true;
+                rightArrowJustPressed = true;
                 inputJustPressed = true;
             }
 
