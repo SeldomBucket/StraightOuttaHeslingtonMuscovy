@@ -145,12 +145,21 @@ public abstract class Character {
     	if (getDirection() == requestedDirection) {
             //Assessment 4 Change (S3)
             if (Game.getDementedWaterFowlMode() == Game.DementedWaterFowlMode.ON) {
-                playerDemented = false;
                 //check if any player character is demented
+                playerDemented = false;
                 for (int i = 0; i < Game.party.size(); i++) {
                     if (Game.party.getMember(i).getDemented()) {
                         playerDemented = true;
                         break;
+                    }
+                }
+                //5% chance of first demented PC losing demented status per step
+                if ((playerDemented) && (rand.nextInt(20)) == 0) {
+                    for (int i = 0; i < Game.party.size(); i++) {
+                        if (Game.party.getMember(i).getDemented()) {
+                            Game.party.getMember(i).setDemented(false);
+                            break;
+                        }
                     }
                 }
                 if (playerDemented) {
@@ -160,6 +169,7 @@ public abstract class Character {
                         setDirection(requestedDirection);
                     }
                 }
+                //change end
             }
             switch (requestedDirection) {
                 case UP:
