@@ -319,6 +319,7 @@ public abstract class Character {
     public void activatePowerCheat(){
         setPowerCheatActive(true);
     }
+
     public void deactivatePowerCheat(){
         setPowerCheatActive(false);
     }
