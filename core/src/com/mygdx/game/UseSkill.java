@@ -4,6 +4,7 @@ import com.mygdx.game.assets.Assets;
 import com.mygdx.game.battle.BattleAnimator;
 import com.mygdx.game.battle.BattleMenu;
 import com.mygdx.game.input.InputHandler;
+import java.util.Random;
 
 /**
  * Class to manage skill usage and the movement required for each type of attack.
@@ -14,6 +15,7 @@ public class UseSkill extends UseAbility {
 
     BattleAnimator battleAnimator;
     Skill skill;
+    Random rand = new Random();
 
     /**
      * UseSkill constructor. Immediately begins the process of using the given skill on the target as soon as it is instantiated.
@@ -87,6 +89,14 @@ public class UseSkill extends UseAbility {
                     int damage = user.getStats().getIntelligence() + user.getCurrentEquipment().getTotalIntelligenceModifiers() + skill.getBasePower();
                     target.dealDamage(damage);
                     String infoBoxText = (target.getName() + " takes "+(damage) + " damage");
+                    //Assessment 4 change (S3)
+                    //infect target with demented waterfowl (25% chance)
+                    if ((Game.getDementedWaterFowlMode() == Game.DementedWaterFowlMode.ON) && (user.getDemented())){
+                        if (rand.nextInt(4) == 0) {
+                            target.setDemented(true);
+                        }
+                    }
+                    //change end
                     //ASSESMENT 3 change
                     if(target.isDead())
                         infoBoxText+=" and is defeated.";

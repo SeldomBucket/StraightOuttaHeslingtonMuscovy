@@ -98,6 +98,31 @@
 		},
 	"texture": 5,
 	"isDemented": true
+	},
+	{
+	"name":"Demented Waterfowl",
+	"type":"ENEMY",
+	"stats":{
+		"currentHP":40,
+		"currentMP":40,
+		"maxHP":40,
+		"maxMP":40,
+		"speed":4,
+		"strength":2,
+		"dexterity":2,
+		"intelligence":2,
+		"baseArmourVal":2,
+		"armourVal":2,
+		"experience":205,
+		"currentLevel":2,
+		"maxLevel":20
+	},
+	"skills":[7,8,17],
+	"equipment":{
+		"equipSlots":[0,0,0,0,0]
+	},
+	"texture": 4,
+	"isDemented": true
 	}
 	],
 	"consumables": [0,1,2],

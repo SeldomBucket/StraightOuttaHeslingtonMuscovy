@@ -149,28 +149,33 @@ public class BattleScreen extends ScreenAdapter {
         if(!isBattleOver) {
             //Check inputs if the current turn agent is friendly
             if (currentTurnAgent.type == Agent.AgentType.FRIENDLY) {
-
-                //Input checks
-                if (InputHandler.isActJustPressed()) {
-                    battleMenu.newKeypress(InputHandler.inputType.ACT);
-                } else if (InputHandler.isEscJustPressed()) {
-                    battleMenu.newKeypress(InputHandler.inputType.ESC);
-                } else if (InputHandler.isUpJustPressed()) {
-                    battleMenu.newKeypress(InputHandler.inputType.UP);
-                } else if (InputHandler.isDownJustPressed()) {
-                    battleMenu.newKeypress(InputHandler.inputType.DOWN);
-                } else if (InputHandler.isLeftJustPressed()) {
-                    battleMenu.newKeypress(InputHandler.inputType.LEFT);
-                } else if (InputHandler.isRightJustPressed()) {
-                    battleMenu.newKeypress(InputHandler.inputType.RIGHT);
+                //Assessment 4 change (S3)
+                //handles PC actions if demented waterfowl mode is on
+                if (Game.getDementedWaterFowlMode() == Game.DementedWaterFowlMode.ON) {
+                    dementedUpdate(delta);
                 }
-
+                else {
+                    //Input checks
+                    if (InputHandler.isActJustPressed()) {
+                        battleMenu.newKeypress(InputHandler.inputType.ACT);
+                    } else if (InputHandler.isEscJustPressed()) {
+                        battleMenu.newKeypress(InputHandler.inputType.ESC);
+                    } else if (InputHandler.isUpJustPressed()) {
+                        battleMenu.newKeypress(InputHandler.inputType.UP);
+                    } else if (InputHandler.isDownJustPressed()) {
+                        battleMenu.newKeypress(InputHandler.inputType.DOWN);
+                    } else if (InputHandler.isLeftJustPressed()) {
+                        battleMenu.newKeypress(InputHandler.inputType.LEFT);
+                    } else if (InputHandler.isRightJustPressed()) {
+                        battleMenu.newKeypress(InputHandler.inputType.RIGHT);
+                    }
+                }
+                //change end
             } else {
                 if (!enemyHasUsedSkill) {
                     //Enemy targeting
                     if (Game.getDementedWaterFowlMode() == Game.DementedWaterFowlMode.ON) {
                         dementedUpdate(delta);
-                        //currentUseAbility = new UseSkill(currentTurnAgent, currentTurnAgent, currentTurnAgent.getSkills().get(0), battleMenu);
                         enemyHasUsedSkill = true;
                     } else {
                         currentUseAbility = new UseSkill(currentTurnAgent, turnOrder.get(getTarget(Agent.AgentType.FRIENDLY)), currentTurnAgent.getSkills().get(0), battleMenu);
@@ -191,17 +196,35 @@ public class BattleScreen extends ScreenAdapter {
     //helper function for update that handles random behaviour for demented agents
     public void dementedUpdate(float delta){
         if (currentTurnAgent.getDemented()) {
+                //current agent is demented (behaviour the same regardless if PC or enemy)
                 //generate a random skill from current agent's set and a random target from all agents in battle
                 ranSkill = rand.nextInt(currentTurnAgent.getSkills().size());
                 ranTarget = rand.nextInt(turnOrder.size());
                 currentUseAbility = new UseSkill(currentTurnAgent, turnOrder.get(ranTarget), currentTurnAgent.getSkills().get(ranSkill), battleMenu);
         } else {
-            //not demented, so standard 'ai' behaviour
+            //current agent is an enemy, and is not demented
             if (currentTurnAgent.type == Agent.AgentType.ENEMY) {
                 currentUseAbility = new UseSkill(currentTurnAgent, turnOrder.get(getTarget(Agent.AgentType.FRIENDLY)), currentTurnAgent.getSkills().get(0), battleMenu);
+            } else {
+                //current agent is a PC, and is not demented
+                //Input checks
+                if (InputHandler.isActJustPressed()) {
+                    battleMenu.newKeypress(InputHandler.inputType.ACT);
+                } else if (InputHandler.isEscJustPressed()) {
+                    battleMenu.newKeypress(InputHandler.inputType.ESC);
+                } else if (InputHandler.isUpJustPressed()) {
+                    battleMenu.newKeypress(InputHandler.inputType.UP);
+                } else if (InputHandler.isDownJustPressed()) {
+                    battleMenu.newKeypress(InputHandler.inputType.DOWN);
+                } else if (InputHandler.isLeftJustPressed()) {
+                    battleMenu.newKeypress(InputHandler.inputType.LEFT);
+                } else if (InputHandler.isRightJustPressed()) {
+                    battleMenu.newKeypress(InputHandler.inputType.RIGHT);
+                }
             }
         }
     }
+    //change end
 
     /**
      * Rudimentary targeting for the AI agents.
