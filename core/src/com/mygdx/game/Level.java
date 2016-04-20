@@ -74,7 +74,7 @@ public class Level {
                         locationMap[x][y]= Location.TFTV;
                     }else if(mapLocationProperties.get("Location").equals("The Catalyst")){
                         locationMap[x][y]= Location.CATALYST;
-                    }else if(mapLocationProperties.get("Location").equals("Law and Management School")){
+                    }else if(mapLocationProperties.get("Location").equals("Law + Management School")){
                         locationMap[x][y]= Location.LMB;
                     }else if(mapLocationProperties.get("Location").equals("Ron Cooke Hub")){
                         locationMap[x][y]= Location.RCH;
@@ -86,6 +86,8 @@ public class Level {
                         locationMap[x][y]= Location.CONSTANTINE;
                     }else if(mapLocationProperties.get("Location").equals("The Lake")){
                         locationMap[x][y]= Location.LAKE;
+                    }else if(mapLocationProperties.get("Location").equals("Sport Centre")){
+                        locationMap[x][y]= Location.SPORT_CENTRE;
                     }
             		//locationMap[x][y] = (String) mapLocationProperties.get("Location");
             		//System.out.println(mapLocationProperties.get("Location"));
