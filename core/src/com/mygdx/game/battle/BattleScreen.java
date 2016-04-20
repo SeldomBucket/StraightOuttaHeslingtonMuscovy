@@ -52,6 +52,8 @@ public class BattleScreen extends ScreenAdapter {
     Random rand = new Random();
     int ranTarget;
     int ranSkill;
+    int numAttacks;
+    //change end
 
     public BattleScreen (Game game, BattleParameters battleParams) {
         this.game = game;
@@ -165,9 +167,9 @@ public class BattleScreen extends ScreenAdapter {
 
             } else {
                 if (!enemyHasUsedSkill) {
-                    //Enemy targetting
+                    //Enemy targeting
                     if (Game.getDementedWaterFowlMode() == Game.DementedWaterFowlMode.ON) {
-                        dementedUpdate();
+                        dementedUpdate(delta);
                         //currentUseAbility = new UseSkill(currentTurnAgent, currentTurnAgent, currentTurnAgent.getSkills().get(0), battleMenu);
                         enemyHasUsedSkill = true;
                     } else {
@@ -187,15 +189,12 @@ public class BattleScreen extends ScreenAdapter {
 
     //Assessment 4 change (S3)
     //helper function for update that handles random behaviour for demented agents
-    public void dementedUpdate(){
+    public void dementedUpdate(float delta){
         if (currentTurnAgent.getDemented()) {
-            //rand.nextInt(2) + 1 instead of nextInt(3) so we get a range from 1 to 2
-            //for(int i = 0;i == (rand.nextInt(2) + 1);i++) {
                 //generate a random skill from current agent's set and a random target from all agents in battle
                 ranSkill = rand.nextInt(currentTurnAgent.getSkills().size());
                 ranTarget = rand.nextInt(turnOrder.size());
                 currentUseAbility = new UseSkill(currentTurnAgent, turnOrder.get(ranTarget), currentTurnAgent.getSkills().get(ranSkill), battleMenu);
-            //}
         } else {
             //not demented, so standard 'ai' behaviour
             if (currentTurnAgent.type == Agent.AgentType.ENEMY) {
@@ -331,12 +330,19 @@ public class BattleScreen extends ScreenAdapter {
      * Sets up next turn, ensuring that the agent with the next turn isn't dead.
      */
     private void nextTurn(){
-
-        //Increment turn pointer and wrap it around if out of range
-        turnOrderPointer++;
-        if(turnOrderPointer>=turnOrder.size()){
-            turnOrderPointer=0;
+        //Assessment 4 change (S3)
+        //loop attacks from current agent if demented and not done
+        //will only ever be > 0 if Demented Waterfowl mode is on and the current agent is demented
+        if (numAttacks > 0) {
+            numAttacks--;
+        } else {
+            //Increment turn pointer and wrap it around if out of range
+            turnOrderPointer++;
+            if(turnOrderPointer>=turnOrder.size()){
+                turnOrderPointer=0;
+            }
         }
+        //change end
 
         if(turnOrder.get(turnOrderPointer).isDead()) //Skip turn if the agent is dead
             nextTurn();
@@ -361,6 +367,12 @@ public class BattleScreen extends ScreenAdapter {
         currentTurnAgent = turnOrder.get(turnOrderPointer);
         battleMenu.createInfoBox(currentTurnAgent.getName() + "'s turn", 10);
         battleMenu.updateTurnIndicator();
+        //Assessment 4 change (S3)
+        //set number of attacks if demented
+        if ((game.getDementedWaterFowlMode() == Game.DementedWaterFowlMode.ON) && (currentTurnAgent.getDemented())) {
+            numAttacks = rand.nextInt(3);
+        }
+        //change end
     }
 
     /**
