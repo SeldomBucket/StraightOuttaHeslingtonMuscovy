@@ -48,6 +48,11 @@ public class BattleScreen extends ScreenAdapter {
     boolean isBattleOver = false;
     boolean isBattleWon;
 
+    //Assessment 4 change (S3)
+    Random rand = new Random();
+    int ranTarget;
+    int ranSkill;
+
     public BattleScreen (Game game, BattleParameters battleParams) {
         this.game = game;
         batch = new SpriteBatch();
@@ -161,8 +166,14 @@ public class BattleScreen extends ScreenAdapter {
             } else {
                 if (!enemyHasUsedSkill) {
                     //Enemy targetting
-                    currentUseAbility = new UseSkill(currentTurnAgent, turnOrder.get(getTarget(Agent.AgentType.FRIENDLY)), currentTurnAgent.getSkills().get(0), battleMenu);
-                    enemyHasUsedSkill = true;
+                    if (Game.getDementedWaterFowlMode() == Game.DementedWaterFowlMode.ON) {
+                        dementedUpdate();
+                        //currentUseAbility = new UseSkill(currentTurnAgent, currentTurnAgent, currentTurnAgent.getSkills().get(0), battleMenu);
+                        enemyHasUsedSkill = true;
+                    } else {
+                        currentUseAbility = new UseSkill(currentTurnAgent, turnOrder.get(getTarget(Agent.AgentType.FRIENDLY)), currentTurnAgent.getSkills().get(0), battleMenu);
+                        enemyHasUsedSkill = true;
+                    }
                 }
             }
         }
@@ -172,6 +183,25 @@ public class BattleScreen extends ScreenAdapter {
         if(currentUseAbility!=null)
             currentUseAbility.update(delta);
 
+    }
+
+    //Assessment 4 change (S3)
+    //helper function for update that handles random behaviour for demented agents
+    public void dementedUpdate(){
+        if (currentTurnAgent.getDemented()) {
+            //rand.nextInt(2) + 1 instead of nextInt(3) so we get a range from 1 to 2
+            //for(int i = 0;i == (rand.nextInt(2) + 1);i++) {
+                //generate a random skill from current agent's set and a random target from all agents in battle
+                ranSkill = rand.nextInt(currentTurnAgent.getSkills().size());
+                ranTarget = rand.nextInt(turnOrder.size());
+                currentUseAbility = new UseSkill(currentTurnAgent, turnOrder.get(ranTarget), currentTurnAgent.getSkills().get(ranSkill), battleMenu);
+            //}
+        } else {
+            //not demented, so standard 'ai' behaviour
+            if (currentTurnAgent.type == Agent.AgentType.ENEMY) {
+                currentUseAbility = new UseSkill(currentTurnAgent, turnOrder.get(getTarget(Agent.AgentType.FRIENDLY)), currentTurnAgent.getSkills().get(0), battleMenu);
+            }
+        }
     }
 
     /**
