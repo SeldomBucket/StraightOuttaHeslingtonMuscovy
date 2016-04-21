@@ -50,6 +50,9 @@ public class BattleScreen extends ScreenAdapter {
 
     //Assessment 4 change (S3)
     Random rand = new Random();
+    //agentAttacking stores whether or not a demented agent is currently making its multi-attacks
+    boolean agentAttacking = false;
+    boolean demented = false;
     int ranTarget;
     int ranSkill;
     int numAttacks;
@@ -149,64 +152,6 @@ public class BattleScreen extends ScreenAdapter {
         if(!isBattleOver) {
             //Check inputs if the current turn agent is friendly
             if (currentTurnAgent.type == Agent.AgentType.FRIENDLY) {
-                //Assessment 4 change (S3)
-                //handles PC actions if demented waterfowl mode is on
-                if (Game.getDementedWaterFowlMode() == Game.DementedWaterFowlMode.ON) {
-                    dementedUpdate(delta);
-                }
-                else {
-                    //Input checks
-                    if (InputHandler.isActJustPressed()) {
-                        battleMenu.newKeypress(InputHandler.inputType.ACT);
-                    } else if (InputHandler.isEscJustPressed()) {
-                        battleMenu.newKeypress(InputHandler.inputType.ESC);
-                    } else if (InputHandler.isUpJustPressed()) {
-                        battleMenu.newKeypress(InputHandler.inputType.UP);
-                    } else if (InputHandler.isDownJustPressed()) {
-                        battleMenu.newKeypress(InputHandler.inputType.DOWN);
-                    } else if (InputHandler.isLeftJustPressed()) {
-                        battleMenu.newKeypress(InputHandler.inputType.LEFT);
-                    } else if (InputHandler.isRightJustPressed()) {
-                        battleMenu.newKeypress(InputHandler.inputType.RIGHT);
-                    }
-                }
-                //change end
-            } else {
-                if (!enemyHasUsedSkill) {
-                    //Enemy targeting
-                    if (Game.getDementedWaterFowlMode() == Game.DementedWaterFowlMode.ON) {
-                        dementedUpdate(delta);
-                        enemyHasUsedSkill = true;
-                    } else {
-                        currentUseAbility = new UseSkill(currentTurnAgent, turnOrder.get(getTarget(Agent.AgentType.FRIENDLY)), currentTurnAgent.getSkills().get(0), battleMenu);
-                        enemyHasUsedSkill = true;
-                    }
-                }
-            }
-        }
-
-        battleMenu.update(delta);
-        battleAnimator.update(delta);
-        if(currentUseAbility!=null)
-            currentUseAbility.update(delta);
-
-    }
-
-    //Assessment 4 change (S3)
-    //helper function for update that handles random behaviour for demented agents
-    public void dementedUpdate(float delta){
-        if (currentTurnAgent.getDemented()) {
-                //current agent is demented (behaviour the same regardless if PC or enemy)
-                //generate a random skill from current agent's set and a random target from all agents in battle
-                ranSkill = rand.nextInt(currentTurnAgent.getSkills().size());
-                ranTarget = rand.nextInt(turnOrder.size());
-                currentUseAbility = new UseSkill(currentTurnAgent, turnOrder.get(ranTarget), currentTurnAgent.getSkills().get(ranSkill), battleMenu);
-        } else {
-            //current agent is an enemy, and is not demented
-            if (currentTurnAgent.type == Agent.AgentType.ENEMY) {
-                currentUseAbility = new UseSkill(currentTurnAgent, turnOrder.get(getTarget(Agent.AgentType.FRIENDLY)), currentTurnAgent.getSkills().get(0), battleMenu);
-            } else {
-                //current agent is a PC, and is not demented
                 //Input checks
                 if (InputHandler.isActJustPressed()) {
                     battleMenu.newKeypress(InputHandler.inputType.ACT);
@@ -221,10 +166,26 @@ public class BattleScreen extends ScreenAdapter {
                 } else if (InputHandler.isRightJustPressed()) {
                     battleMenu.newKeypress(InputHandler.inputType.RIGHT);
                 }
+            } else {
+                if (!enemyHasUsedSkill) {
+                    //Enemy targeting
+                    if (Game.getDementedWaterFowlMode() == Game.DementedWaterFowlMode.ON) {
+                        currentUseAbility = new UseSkill(currentTurnAgent, turnOrder.get(getTarget(Agent.AgentType.FRIENDLY)), currentTurnAgent.getSkills().get(0), battleMenu, getDemented());
+                        agentAttacking = true;
+                    } else {
+                        currentUseAbility = new UseSkill(currentTurnAgent, turnOrder.get(getTarget(Agent.AgentType.FRIENDLY)), currentTurnAgent.getSkills().get(0), battleMenu, getDemented());
+                    }
+                }
+                enemyHasUsedSkill = true;
             }
         }
+
+        battleMenu.update(delta);
+        battleAnimator.update(delta);
+        if(currentUseAbility!=null)
+            currentUseAbility.update(delta);
+
     }
-    //change end
 
     /**
      * Rudimentary targeting for the AI agents.
@@ -233,7 +194,7 @@ public class BattleScreen extends ScreenAdapter {
     public int getTarget(Agent.AgentType typeToGet){
         Random random = new Random();
         int index = random.nextInt(turnOrder.size());
-        //ASSESSMENT 3 chnage (4)
+        //ASSESSMENT 3 change (4)
         if(turnOrder.get(index).type!=typeToGet || turnOrder.get(index).isDead())
             return getTarget(typeToGet);
         else
@@ -356,7 +317,7 @@ public class BattleScreen extends ScreenAdapter {
         //Assessment 4 change (S3)
         //loop attacks from current agent if demented and not done
         //will only ever be > 0 if Demented Waterfowl mode is on and the current agent is demented
-        if (numAttacks > 0) {
+        if (numAttacks > 0 && !turnOrder.get(turnOrderPointer).isDead()) {
             numAttacks--;
         } else {
             //Increment turn pointer and wrap it around if out of range
@@ -364,6 +325,9 @@ public class BattleScreen extends ScreenAdapter {
             if(turnOrderPointer>=turnOrder.size()){
                 turnOrderPointer=0;
             }
+            agentAttacking = false;
+            demented = false;
+            numAttacks = 0;
         }
         //change end
 
@@ -380,22 +344,32 @@ public class BattleScreen extends ScreenAdapter {
      * If the this turn's agent is friendly, adjust their location and move the turnIndicator.
      */
     public void startTurn(){
+        currentTurnAgent = turnOrder.get(turnOrderPointer);
+        //Assessment 4 change (S3)
         if(turnOrder.get(turnOrderPointer).type== Agent.AgentType.FRIENDLY) {
+            if (game.getDementedWaterFowlMode() == Game.DementedWaterFowlMode.ON && currentTurnAgent.getDemented()) {
+                //25% chance of acting randomly
+                if (rand.nextInt(4) == 0) {
+                    demented = true;
+                }
+            }
             turnOrder.get(turnOrderPointer).setX(turnOrder.get(turnOrderPointer).getX() - 20);
 
             //Set battleMenu skill list size for new current agent's turn
             battleMenu.setSkillMenuSize(turnOrder.get(turnOrderPointer).getSkills().size());
             battleMenu.resetMenus(); //Reset the menus
-        }
-        currentTurnAgent = turnOrder.get(turnOrderPointer);
-        battleMenu.createInfoBox(currentTurnAgent.getName() + "'s turn", 10);
-        battleMenu.updateTurnIndicator();
-        //Assessment 4 change (S3)
-        //set number of attacks if demented
-        if ((game.getDementedWaterFowlMode() == Game.DementedWaterFowlMode.ON) && (currentTurnAgent.getDemented())) {
-            numAttacks = rand.nextInt(3);
+        } else {
+            //set number of attacks if demented and we have not already generated the number of attacks
+            if ((game.getDementedWaterFowlMode() == Game.DementedWaterFowlMode.ON) && (currentTurnAgent.getDemented())) {
+                if (!agentAttacking) {
+                    demented = true;
+                    numAttacks = rand.nextInt(3);
+                }
+            }
         }
         //change end
+        battleMenu.createInfoBox(currentTurnAgent.getName() + "'s turn", 10);
+        battleMenu.updateTurnIndicator();
     }
 
     /**
@@ -448,4 +422,14 @@ public class BattleScreen extends ScreenAdapter {
     public Agent getCurrentTurnAgent() {
         return currentTurnAgent;
     }
+
+    //Assessment 4 change (S3)
+    public List<Agent> getTurnOrder() {
+        return turnOrder;
+    }
+
+    public Boolean getDemented() {
+        return demented;
+    }
+    //change end
 }

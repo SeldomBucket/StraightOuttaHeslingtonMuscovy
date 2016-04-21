@@ -3,7 +3,10 @@ package com.mygdx.game;
 import com.mygdx.game.assets.Assets;
 import com.mygdx.game.battle.BattleAnimator;
 import com.mygdx.game.battle.BattleMenu;
+import com.mygdx.game.battle.BattleScreen;
 import com.mygdx.game.input.InputHandler;
+import com.sun.org.apache.xpath.internal.operations.Bool;
+
 import java.util.Random;
 
 /**
@@ -17,6 +20,9 @@ public class UseSkill extends UseAbility {
     Skill skill;
     Random rand = new Random();
 
+    //Assessment 4 change (S3)
+    Agent skillTarget;
+
     /**
      * UseSkill constructor. Immediately begins the process of using the given skill on the target as soon as it is instantiated.
      * @param user The Agent that is using the skill
@@ -24,14 +30,24 @@ public class UseSkill extends UseAbility {
      * @param abilityID The ID of the skill being used
      * @param battleMenu The instance of the battleMenu
      */
-    public UseSkill(Agent user, Agent target, int abilityID, BattleMenu battleMenu){
+    public UseSkill(Agent user, Agent target, int abilityID, BattleMenu battleMenu, Boolean demented){
         super(user, target, abilityID, battleMenu);
 
         InputHandler.disableAllInput();
 
         battleAnimator = new BattleAnimator();
 
-        skill = Game.skills.getSkill(abilityID);
+        //Assessment 4 change (S3)
+        //attacker is demented- overwrite parameters passed i.e. random action
+        if (demented) {
+            skill = Game.skills.getSkill(user.getSkills().get(rand.nextInt(user.getSkills().size())));
+            int targetIndex = rand.nextInt(battleMenu.battleScreen.getTurnOrder().size());
+            skillTarget = battleMenu.battleScreen.getTurnOrder().get(targetIndex);
+        } else {
+            skill = Game.skills.getSkill(abilityID);
+            skillTarget = target;
+        }
+        //chang end
 
         battleMenu.showTurnIndicator=false;
 
@@ -43,14 +59,14 @@ public class UseSkill extends UseAbility {
                 break;
             }
             case MAGIC:{
-                battleAnimator.moveAgentTo(user,target.getX(),target.getY(),this);//Moves the agent to the target
-                battleMenu.createInfoBox(user.getName() + " uses " + skill.getName()+" on "+target.getName(),3);//Create an info box with information on the current action
+                battleAnimator.moveAgentTo(user,skillTarget.getX(),skillTarget.getY(),this);//Moves the agent to the target
+                battleMenu.createInfoBox(user.getName() + " uses " + skill.getName()+" on "+skillTarget.getName(),3);//Create an info box with information on the current action
 
                 break;
             }
             case HEAL:{
-                battleAnimator.moveAgentTo(user, target.getX(), target.getY(), this);
-                battleMenu.createInfoBox(user.getName() + " uses " + skill.getName()+" on "+target.getName(),3);
+                battleAnimator.moveAgentTo(user, skillTarget.getX(), skillTarget.getY(), this);
+                battleMenu.createInfoBox(user.getName() + " uses " + skill.getName()+" on "+skillTarget.getName(),3);
 
                 break;
             }
@@ -87,18 +103,18 @@ public class UseSkill extends UseAbility {
                     Assets.sfx_hitNoise.play(Game.masterVolume);
                     //ASSESMENT 3 change (5)
                     int damage = user.getStats().getIntelligence() + user.getCurrentEquipment().getTotalIntelligenceModifiers() + skill.getBasePower();
-                    target.dealDamage(damage);
-                    String infoBoxText = (target.getName() + " takes "+(damage) + " damage");
+                    skillTarget.dealDamage(damage);
+                    String infoBoxText = (skillTarget.getName() + " takes "+(damage) + " damage");
                     //Assessment 4 change (S3)
                     //infect target with demented waterfowl (25% chance)
                     if ((Game.getDementedWaterFowlMode() == Game.DementedWaterFowlMode.ON) && (user.getDemented())){
                         if (rand.nextInt(4) == 0) {
-                            target.setDemented(true);
+                            skillTarget.setDemented(true);
                         }
                     }
                     //change end
                     //ASSESMENT 3 change
-                    if(target.isDead())
+                    if(skillTarget.isDead())
                         infoBoxText+=" and is defeated.";
                     battleMenu.createInfoBox( infoBoxText, 3);
                     battleAnimator.returnAgent();//Return agent to start point
@@ -107,8 +123,8 @@ public class UseSkill extends UseAbility {
                 }
                 case HEAL: {
                     Assets.sfx_healNoise.play(Game.masterVolume);
-                    target.dealHealth(skill.getBasePower());
-                    battleMenu.createInfoBox(target.getName() + " healed for " + skill.getBasePower()
+                    skillTarget.dealHealth(skill.getBasePower());
+                    battleMenu.createInfoBox(skillTarget.getName() + " healed for " + skill.getBasePower()
                             + " health", 3);
                     battleAnimator.returnAgent();
                     break;

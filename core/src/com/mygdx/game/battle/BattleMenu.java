@@ -469,7 +469,7 @@ public class BattleMenu {
                             break;
                         }
                     }
-                    currentUseAbility = new UseSkill(currentAgent,battleScreen.turnOrder.get(battleLayout[targetMenuPointerRow][targetMenuPointerColumn]), skillOrItemID, this);
+                    currentUseAbility = new UseSkill(currentAgent,battleScreen.turnOrder.get(battleLayout[targetMenuPointerRow][targetMenuPointerColumn]), skillOrItemID, this, battleScreen.getDemented());
                 
                 }else if(isItemTargeting) {
                     currentUseAbility = new UseItem(currentAgent,battleScreen.turnOrder.get(battleLayout[targetMenuPointerRow][targetMenuPointerColumn]), skillOrItemID, this);
