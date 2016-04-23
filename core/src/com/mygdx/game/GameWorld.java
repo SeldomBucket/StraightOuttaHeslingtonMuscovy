@@ -28,7 +28,7 @@ public class GameWorld {
     private BattleParameters battleParams;
     private int battleChance;
 
-    private int speedCheatState, powerCheatState;
+    private int cheatState;
 
     /**
      * Constructor for the GameWorld generates a new level and adds the characters to be used in the game.
@@ -56,8 +56,8 @@ public class GameWorld {
         enemyDuck2.addSkill(0);
         battleParams.addEnemy(enemyDuck);
         battleParams.addEnemy(enemyDuck2);
-        speedCheatState = 0; //S O N I C
-        powerCheatState = 0; //up up down down left right left right B A
+        cheatState = 0; //S O N I C
+        cheatState = 0; //up up down down left right left right B A
     }
 
     /**
@@ -199,102 +199,145 @@ public class GameWorld {
                 break;
             case CHEAT_ENTRY:
                 if (InputHandler.isEnterJustPressed()){
-                    if (speedCheatState == 5){
+                    if (cheatState == 5){
                         level.player.activateSpeedCheat();
                         uiManager.addNotification("SPEED CHEAT ACTIVATED FOR 30s");
-                        speedCheatState = 0;
-                    }
-                    if (powerCheatState == 10){
+                        cheatState = 0;
+                    }else if (cheatState == 16){
                         uiManager.addNotification("POWER CHEAT ACTIVATED UNTIL END OF NEXT BATTLE");
-                        powerCheatState = 0;
+                        cheatState = 0;
                         level.player.activatePowerCheat();
                         //DO THE POWER CHEAT
                     }
                     gameState = GameState.FREEROAM;
                 }else{
                     if(!InputHandler.isOtherJustPressed()){
-                        switch (speedCheatState){
+                        switch (cheatState){
                             case 0:
                                 if(InputHandler.isDownJustPressed()){
-                                    speedCheatState +=1;
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isUpArrowJustPressed()){
+                                    cheatState = 7;
                                 }
                                 break;
                             case 1:
                                 if(InputHandler.isOJustPressed()){
-                                    speedCheatState +=1;
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isUpArrowJustPressed()){
+                                    cheatState = 7;
                                 }
                                 break;
                             case 2:
                                 if(InputHandler.isNJustPressed()){
-                                    speedCheatState +=1;
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isUpArrowJustPressed()){
+                                    cheatState = 7;
                                 }
                                 break;
                             case 3:
                                 if(InputHandler.isIJustPressed()){
-                                    speedCheatState +=1;
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isUpArrowJustPressed()){
+                                    cheatState = 7;
                                 }
                                 break;
                             case 4:
                                 if(InputHandler.isCJustPressed()){
-                                    speedCheatState +=1;
+                                    cheatState +=1;
                                 }
-                                break;
-                        }
-                        switch (powerCheatState){
-                            case 0:
                                 if(InputHandler.isUpArrowJustPressed()){
-                                    powerCheatState +=1;
-                                }
-                                break;
-                            case 1:
-                                if(InputHandler.isUpArrowJustPressed()){
-                                    powerCheatState +=1;
-                                }
-                                break;
-                            case 2:
-                                if(InputHandler.isDownArrowJustPressed()){
-                                    powerCheatState +=1;
-                                }
-                                break;
-                            case 3:
-                                if(InputHandler.isDownArrowJustPressed()){
-                                    powerCheatState +=1;
-                                }
-                                break;
-                            case 4:
-                                if(InputHandler.isLeftArrowJustPressed()){
-                                    powerCheatState +=1;
+                                    cheatState = 7;
                                 }
                                 break;
                             case 5:
-                                if(InputHandler.isRightArrowJustPressed()){
-                                    powerCheatState +=1;
-                                }
-                                break;
-                            case 6:
-                                if(InputHandler.isLeftArrowJustPressed()){
-                                    powerCheatState +=1;
+                                if(InputHandler.isUpArrowJustPressed()){
+                                    cheatState = 7;
                                 }
                                 break;
                             case 7:
-                                if(InputHandler.isRightArrowJustPressed()){
-                                    powerCheatState +=1;
+                                if(InputHandler.isUpArrowJustPressed()){
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isDownJustPressed()){
+                                    cheatState = 1;
                                 }
                                 break;
                             case 8:
-                                if(InputHandler.isBJustPressed()){
-                                    powerCheatState +=1;
+                                if(InputHandler.isDownArrowJustPressed()){
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isDownJustPressed()){
+                                    cheatState = 1;
                                 }
                                 break;
                             case 9:
+                                if(InputHandler.isDownArrowJustPressed()){
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isDownJustPressed()){
+                                    cheatState = 1;
+                                }
+                                break;
+                            case 10:
+                                if(InputHandler.isLeftArrowJustPressed()){
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isDownJustPressed()){
+                                    cheatState = 1;
+                                }
+                                break;
+                            case 11:
+                                if(InputHandler.isRightArrowJustPressed()){
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isDownJustPressed()){
+                                    cheatState = 1;
+                                }
+                                break;
+                            case 12:
+                                if(InputHandler.isLeftArrowJustPressed()){
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isDownJustPressed()){
+                                    cheatState = 1;
+                                }
+                                break;
+                            case 13:
+                                if(InputHandler.isRightArrowJustPressed()){
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isDownJustPressed()){
+                                    cheatState = 1;
+                                }
+                                break;
+                            case 14:
+                                if(InputHandler.isBJustPressed()){
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isDownJustPressed()){
+                                    cheatState = 1;
+                                }
+                                break;
+                            case 15:
                                 if(InputHandler.isLeftJustPressed()){
-                                    powerCheatState +=1;
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isDownJustPressed()){
+                                    cheatState = 1;
+                                }
+                                break;
+                            case 16:
+                                if(InputHandler.isDownJustPressed()){
+                                    cheatState = 1;
                                 }
                                 break;
                         }
                     }else{
-                        speedCheatState = 0;
-                        powerCheatState = 0;
+                        cheatState = 0;
                     }
                 }
                 break;
