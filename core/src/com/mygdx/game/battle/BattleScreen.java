@@ -173,7 +173,7 @@ public class BattleScreen extends ScreenAdapter {
                         currentUseAbility = new UseSkill(currentTurnAgent, turnOrder.get(getTarget(Agent.AgentType.FRIENDLY)), currentTurnAgent.getSkills().get(0), battleMenu, getDemented());
                         agentAttacking = true;
                     } else {
-                        currentUseAbility = new UseSkill(currentTurnAgent, turnOrder.get(getTarget(Agent.AgentType.FRIENDLY)), currentTurnAgent.getSkills().get(0), battleMenu, getDemented());
+                        currentUseAbility = new UseSkill(currentTurnAgent, turnOrder.get(getTarget(Agent.AgentType.FRIENDLY)), currentTurnAgent.getSkills().get(0), battleMenu, false);
                     }
                 }
                 enemyHasUsedSkill = true;
