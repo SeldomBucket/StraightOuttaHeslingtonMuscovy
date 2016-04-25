@@ -147,11 +147,13 @@ public class GameWorld {
                         }
                       //END ASSESSMENT 3 change
                     }
+                    //ASSESSMENT 4 CHANGE (S2)
                 else
                     if (InputHandler.isGraveJustPressed()){
                         gameState = GameState.CHEAT_ENTRY;
                         level.stopInput = true;
                     }
+                //END ASSESSMENT 4 CHANGE
                 break;
 
             case PARTY_MENU:
@@ -183,7 +185,7 @@ public class GameWorld {
             case BATTLE:
                 if (game.wonBattle) {
                     uiManager.addNotification("You won the battle!");
-                    //ASSESSMENT 4 CHANGE (S1)
+                    //ASSESSMENT 4 CHANGE (S2)
                     level.player.deactivatePowerCheat();
                     //ASSESSMENT 4 CHANGE END
                     //ASSESSMENT 3 changes (10)
@@ -197,25 +199,25 @@ public class GameWorld {
                 }
                 gameState = GameState.FREEROAM;
                 break;
+            //ASSESSMENT 4 CHANGE (S2)
             case CHEAT_ENTRY:
                 if (InputHandler.isEnterJustPressed()){
                     if (cheatState == 5){
                         level.player.activateSpeedCheat();
                         uiManager.addNotification("SPEED CHEAT ACTIVATED FOR 30s");
-                        cheatState = 0;
                     }else if (cheatState == 16){
                         uiManager.addNotification("POWER CHEAT ACTIVATED UNTIL END OF NEXT BATTLE");
-                        cheatState = 0;
                         level.player.activatePowerCheat();
                         //DO THE POWER CHEAT
                     }
+                    cheatState = 0;
                     gameState = GameState.FREEROAM;
                 }else{
                     if(!InputHandler.isOtherJustPressed()){
                         switch (cheatState){
                             case 0:
                                 if(InputHandler.isDownJustPressed()){
-                                    cheatState +=1;
+                                    cheatState = 1;
                                 }
                                 if(InputHandler.isUpArrowJustPressed()){
                                     cheatState = 7;
@@ -341,6 +343,7 @@ public class GameWorld {
                     }
                 }
                 break;
+            //END ASSESSMENT 4 CHANGE
         }
     }
 
@@ -357,6 +360,7 @@ public class GameWorld {
     /**
      * Function gets the index of the location image from the current location string
      * ASSESSMENT 3 change (16)
+     * ASSESSMENT 4 CHANGE (S1)
      */
     private int getBackgroundFromLocation(){
     	switch (Game.currentLocation){

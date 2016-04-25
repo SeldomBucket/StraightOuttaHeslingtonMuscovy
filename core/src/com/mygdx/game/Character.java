@@ -44,12 +44,7 @@ public abstract class Character {
     protected boolean isSwimming = false;
     //ASSESSMENT 3 END LINE
 
-    //ASSESSMENT 4 CHANGE (S1)
-    protected boolean speedCheatActive = false;
-    private float speedCheatTime = 0;
 
-    protected boolean powerCheatActive = false;
-    //ASSESSMENT 4 END LINE
     
 //  Map information for collision detection.
     protected Level level;
@@ -90,23 +85,7 @@ public abstract class Character {
         } else {
             updateTransitioning(delta);
         }
-        //ASSESSMENT 4 CHANGE (S1)
-        if(isSpeedCheatActive()){
-            updateSpeedCheat(delta);
-        }
-        //ASSESSMENT 4 CHANGE END
-    }
 
-    /**
-     * Function ADDED for ASSESSMENT 4 (S1)
-     * @param delta The time since the last frame was rendered.
-     */
-    private void updateSpeedCheat(float delta){
-        if (speedCheatTime<=0){
-            speedCheatActive = false;
-        }else{
-            speedCheatTime -= delta;
-        }
     }
 
     /**
@@ -279,50 +258,11 @@ public abstract class Character {
     public void updateSpeed(){
     	if(isFlying()){
     		transitionSpeed = 0.05f;
-            if (speedCheatActive){
-                transitionSpeed = 0.02f;
-            }
     	}else if (isSwimming){
     		transitionSpeed = 0.1f;
-            if (speedCheatActive){
-                transitionSpeed = 0.05f;
-            }
         }else{
     		transitionSpeed = 0.25f;
-            if (speedCheatActive){
-                transitionSpeed = 0.1f;
-            }
     	}
     }
-    //ASSESSMENT 4 CHANGE (S1)
-    public boolean isSpeedCheatActive() {
-        return speedCheatActive;
-    }
 
-    public void setSpeedCheatActive(boolean speedCheatActive) {
-        this.speedCheatActive = speedCheatActive;
-    }
-
-    public void activateSpeedCheat(){
-        setSpeedCheatActive(true);
-        speedCheatTime = 30;
-    }
-
-    public boolean isPowerCheatActive() {
-        return powerCheatActive;
-    }
-
-    public void setPowerCheatActive(boolean powerCheatActive) {
-        this.powerCheatActive = powerCheatActive;
-    }
-
-    public void activatePowerCheat(){
-        setPowerCheatActive(true);
-    }
-
-    public void deactivatePowerCheat(){
-        setPowerCheatActive(false);
-    }
-
-    //ASSESSMENT 4 CHANGE END
 }
