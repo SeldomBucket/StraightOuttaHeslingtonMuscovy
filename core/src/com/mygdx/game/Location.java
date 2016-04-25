@@ -5,5 +5,5 @@ package com.mygdx.game;
  * Updated for assessment 4 (S1)
  */
 public enum Location {
-    CATALYST, CS, TFTV, LMB, RCH, GOODRICKE, LANGWITH, CONSTANTINE, LAKE, SOMEWHERE
+    CATALYST, CS, TFTV, LMB, RCH, GOODRICKE, LANGWITH, CONSTANTINE, LAKE, SPORT_CENTRE, SOMEWHERE
 }

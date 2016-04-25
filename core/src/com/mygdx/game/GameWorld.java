@@ -28,7 +28,7 @@ public class GameWorld {
     private BattleParameters battleParams;
     private int battleChance;
 
-    private int speedCheatState, powerCheatState;
+    private int cheatState;
 
     /**
      * Constructor for the GameWorld generates a new level and adds the characters to be used in the game.
@@ -56,8 +56,8 @@ public class GameWorld {
         enemyDuck2.addSkill(0);
         battleParams.addEnemy(enemyDuck);
         battleParams.addEnemy(enemyDuck2);
-        speedCheatState = 0; //S O N I C
-        powerCheatState = 0; //up up down down left right left right B A
+        cheatState = 0; //S O N I C
+        cheatState = 0; //up up down down left right left right B A
     }
 
     /**
@@ -92,14 +92,20 @@ public class GameWorld {
                     for(int i=0;i<random.nextInt(3)+1;i++){
                         Agent thisAgent = Game.enemies.getMember(random.nextInt(Game.enemies.size()));
                         Statistics thisAgentStats = thisAgent.getStats();
-                        Statistics newStats = new Statistics(thisAgentStats.getMaxHP(),thisAgentStats.getMaxMP(),thisAgentStats.getSpeed(),thisAgentStats.getStrength(),thisAgentStats.getDexterity(),thisAgentStats.getIntelligence(),thisAgentStats.getBaseArmourVal(),thisAgentStats.getExperience(),thisAgentStats.getCurrentLevel());
-                        //Added entry of agent's demented status
+
+                        Statistics newStats;
+                        if(level.player.isPowerCheatActive()){
+                            newStats = new Statistics(thisAgentStats.getMaxHP(),thisAgentStats.getMaxMP(),thisAgentStats.getSpeed(),thisAgentStats.getStrength()+2,thisAgentStats.getDexterity()+2,thisAgentStats.getIntelligence()+2,thisAgentStats.getBaseArmourVal(),thisAgentStats.getExperience(),thisAgentStats.getCurrentLevel());
+                        }else{
+                            newStats = new Statistics(thisAgentStats.getMaxHP(),thisAgentStats.getMaxMP(),thisAgentStats.getSpeed(),thisAgentStats.getStrength(),thisAgentStats.getDexterity(),thisAgentStats.getIntelligence(),thisAgentStats.getBaseArmourVal(),thisAgentStats.getExperience(),thisAgentStats.getCurrentLevel());
+                        }
                         params.addEnemy(new Agent(thisAgent.getName(), thisAgent.getType(), newStats, thisAgent.getSkills(), thisAgent.getCurrentEquipment(), thisAgent.getTexture(), thisAgent.getDemented()));
                     }
 
                     battleParams = params;
                     Assets.worldMusic.stop();//Stop the worldMusic
                     Assets.sfx_battleStart.play(Game.masterVolume);
+
                     gameState = GameState.BATTLE_DIALOGUE;
                     level.stopInput = true;
                 } else
@@ -142,11 +148,13 @@ public class GameWorld {
                         }
                       //END ASSESSMENT 3 change
                     }
+                    //ASSESSMENT 4 CHANGE (S2)
                 else
                     if (InputHandler.isGraveJustPressed()){
                         gameState = GameState.CHEAT_ENTRY;
                         level.stopInput = true;
                     }
+                //END ASSESSMENT 4 CHANGE
                 break;
 
             case PARTY_MENU:
@@ -178,6 +186,9 @@ public class GameWorld {
             case BATTLE:
                 if (game.wonBattle) {
                     uiManager.addNotification("You won the battle!");
+                    //ASSESSMENT 4 CHANGE (S2)
+                    level.player.deactivatePowerCheat();
+                    //ASSESSMENT 4 CHANGE END
                     //ASSESSMENT 3 changes (10)
 //                    game.objectiveManager.battleWon(uiManager);
                 } else {
@@ -189,109 +200,151 @@ public class GameWorld {
                 }
                 gameState = GameState.FREEROAM;
                 break;
+            //ASSESSMENT 4 CHANGE (S2)
             case CHEAT_ENTRY:
                 if (InputHandler.isEnterJustPressed()){
-                    if (speedCheatState == 5){
+                    if (cheatState == 5){
                         level.player.activateSpeedCheat();
                         uiManager.addNotification("SPEED CHEAT ACTIVATED FOR 30s");
-                        speedCheatState = 0;
-                    }
-                    if (powerCheatState == 10){
+                    }else if (cheatState == 16){
+                        uiManager.addNotification("POWER CHEAT ACTIVATED UNTIL END OF NEXT BATTLE");
+                        level.player.activatePowerCheat();
                         //DO THE POWER CHEAT
                     }
+                    cheatState = 0;
                     gameState = GameState.FREEROAM;
                 }else{
                     if(!InputHandler.isOtherJustPressed()){
-                        switch (speedCheatState){
+                        switch (cheatState){
                             case 0:
                                 if(InputHandler.isDownJustPressed()){
-                                    speedCheatState +=1;
-                                    uiManager.addNotification("SPEED CHEAT STATE 1");
+                                    cheatState = 1;
+                                }
+                                if(InputHandler.isUpArrowJustPressed()){
+                                    cheatState = 7;
                                 }
                                 break;
                             case 1:
                                 if(InputHandler.isOJustPressed()){
-                                    speedCheatState +=1;
-                                    uiManager.addNotification("SPEED CHEAT STATE 2");
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isUpArrowJustPressed()){
+                                    cheatState = 7;
                                 }
                                 break;
                             case 2:
                                 if(InputHandler.isNJustPressed()){
-                                    speedCheatState +=1;
-                                    uiManager.addNotification("SPEED CHEAT STATE 3");
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isUpArrowJustPressed()){
+                                    cheatState = 7;
                                 }
                                 break;
                             case 3:
                                 if(InputHandler.isIJustPressed()){
-                                    speedCheatState +=1;
-                                    uiManager.addNotification("SPEED CHEAT STATE 4");
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isUpArrowJustPressed()){
+                                    cheatState = 7;
                                 }
                                 break;
                             case 4:
                                 if(InputHandler.isCJustPressed()){
-                                    speedCheatState +=1;
-                                    uiManager.addNotification("SPEED CHEAT STATE 5");
+                                    cheatState +=1;
                                 }
-                                break;
-                        }
-                        switch (powerCheatState){
-                            case 0:
                                 if(InputHandler.isUpArrowJustPressed()){
-                                    powerCheatState +=1;
-                                }
-                                break;
-                            case 1:
-                                if(InputHandler.isUpArrowJustPressed()){
-                                    powerCheatState +=1;
-                                }
-                                break;
-                            case 2:
-                                if(InputHandler.isDownArrowJustPressed()){
-                                    powerCheatState +=1;
-                                }
-                                break;
-                            case 3:
-                                if(InputHandler.isDownArrowJustPressed()){
-                                    powerCheatState +=1;
-                                }
-                                break;
-                            case 4:
-                                if(InputHandler.isLeftArrowJustPressed()){
-                                    powerCheatState +=1;
+                                    cheatState = 7;
                                 }
                                 break;
                             case 5:
-                                if(InputHandler.isRightArrowJustPressed()){
-                                    powerCheatState +=1;
-                                }
-                                break;
-                            case 6:
-                                if(InputHandler.isLeftArrowJustPressed()){
-                                    powerCheatState +=1;
+                                if(InputHandler.isUpArrowJustPressed()){
+                                    cheatState = 7;
                                 }
                                 break;
                             case 7:
-                                if(InputHandler.isRightArrowJustPressed()){
-                                    powerCheatState +=1;
+                                if(InputHandler.isUpArrowJustPressed()){
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isDownJustPressed()){
+                                    cheatState = 1;
                                 }
                                 break;
                             case 8:
-                                if(InputHandler.isBJustPressed()){
-                                    powerCheatState +=1;
+                                if(InputHandler.isDownArrowJustPressed()){
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isDownJustPressed()){
+                                    cheatState = 1;
                                 }
                                 break;
                             case 9:
+                                if(InputHandler.isDownArrowJustPressed()){
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isDownJustPressed()){
+                                    cheatState = 1;
+                                }
+                                break;
+                            case 10:
+                                if(InputHandler.isLeftArrowJustPressed()){
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isDownJustPressed()){
+                                    cheatState = 1;
+                                }
+                                break;
+                            case 11:
+                                if(InputHandler.isRightArrowJustPressed()){
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isDownJustPressed()){
+                                    cheatState = 1;
+                                }
+                                break;
+                            case 12:
+                                if(InputHandler.isLeftArrowJustPressed()){
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isDownJustPressed()){
+                                    cheatState = 1;
+                                }
+                                break;
+                            case 13:
+                                if(InputHandler.isRightArrowJustPressed()){
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isDownJustPressed()){
+                                    cheatState = 1;
+                                }
+                                break;
+                            case 14:
+                                if(InputHandler.isBJustPressed()){
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isDownJustPressed()){
+                                    cheatState = 1;
+                                }
+                                break;
+                            case 15:
                                 if(InputHandler.isLeftJustPressed()){
-                                    powerCheatState +=1;
+                                    cheatState +=1;
+                                }
+                                if(InputHandler.isDownJustPressed()){
+                                    cheatState = 1;
+                                }
+                                break;
+                            case 16:
+                                if(InputHandler.isDownJustPressed()){
+                                    cheatState = 1;
                                 }
                                 break;
                         }
                     }else{
-                        speedCheatState = 0;
-                        powerCheatState = 0;
+                        cheatState = 0;
                     }
                 }
                 break;
+            //END ASSESSMENT 4 CHANGE
         }
     }
 
@@ -308,6 +361,7 @@ public class GameWorld {
     /**
      * Function gets the index of the location image from the current location string
      * ASSESSMENT 3 change (16)
+     * ASSESSMENT 4 CHANGE (S1)
      */
     private int getBackgroundFromLocation(){
     	switch (Game.currentLocation){

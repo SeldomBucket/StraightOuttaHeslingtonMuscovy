@@ -58,6 +58,9 @@ public class UICurrentLocation extends UIComponent {
                 case SOMEWHERE:
                     location = "Somewhere on Heslington East";
                     break;
+                case SPORT_CENTRE:
+                    location = "Sport Centre";
+                    break;
             }
         }else{
                 location="NULL FOR SOME REASON?";
