@@ -23,7 +23,9 @@ public class Level {
     public boolean[][] collisionMap;
     // Assessment 3 Change (15)
     public boolean[][] waterMap;
+    //ASSESSMENT 4 CHANGE (S1)
     public Location[][] locationMap;
+    //ASSESSMENT 4 CHANGE END
     // Assessment 3 End
     public Player player;
     public ArrayList<Character> characters;
@@ -95,8 +97,6 @@ public class Level {
             		locationMap[x][y] = Location.SOMEWHERE;
             	}
             }
-            
-            
         }
 
         player = new Player(this, new Vector2(115, 94));

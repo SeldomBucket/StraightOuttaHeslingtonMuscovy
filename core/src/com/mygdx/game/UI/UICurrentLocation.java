@@ -13,7 +13,9 @@ public class UICurrentLocation extends UIComponent {
 
     UIMessageBox messageBox;
     String messagePrepend="Current Location: ";
+    //ASSESSMENT 4 CHANGE (S1)
     String location = "Somewhere on Heslington East";
+    //END ASSESSMENT 4 CHANGE
 
     public UICurrentLocation(){
         super(0,0,0,0);
@@ -24,7 +26,11 @@ public class UICurrentLocation extends UIComponent {
         getLocation();
         this.messageBox = new UIMessageBox(messagePrepend+location,this.x,this.y,this.width,this.height,10,10);
     }
-    // Assessment 4 Change (S1)
+
+    /**
+     * Assessment 4 New Method (S1)
+     * Checks the current location and sets the location string to the appropriate description
+     */
     private void getLocation(){
         if (!(Game.currentLocation == null)){
             switch (Game.currentLocation) {
@@ -66,12 +72,16 @@ public class UICurrentLocation extends UIComponent {
                 location="NULL FOR SOME REASON?";
         }
     }
+
     /**
      * Called once per frame to render the location.
+     * Assessment 4 change S1: gets current location and sets the message appropriately
      */
     public void render(SpriteBatch batch, NinePatch patch){
+        //ASSESSMENT 4 CHANGE (S1)
         getLocation();
         messageBox.setMessage(messagePrepend+location);
+        //END ASSESSMENT 4 CHANGE
         messageBox.render(batch,patch);
     }
 }
