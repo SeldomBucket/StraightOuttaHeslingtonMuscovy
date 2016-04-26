@@ -29,7 +29,6 @@ public abstract class Character {
     //Assessment 4 change (S3)
     public Game game;
     public Random rand = new Random();
-    public int ranInt;
     private Boolean playerDemented;
     //Change end
 
@@ -143,6 +142,7 @@ public abstract class Character {
                         }
                     }
                 }
+
                 if (playerDemented) {
                     //trigger random movement with a 10% chance if a player character is demented
                     if (rand.nextInt(10) == 0) {
