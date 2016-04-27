@@ -155,4 +155,18 @@ public class Statistics {
     }
 
     public int getMaxExp() { return maxExp; }
+
+    //ASSESSMENT 4 CHANGE (S2)
+    public void activatePowerCheat(){
+        strength += 2;
+        intelligence +=2;
+        dexterity +=2;
+    }
+
+    public void deactivatePowerCheat(){
+        strength -= 2;
+        intelligence -=2;
+        dexterity -=2;
+    }
+    //ASSESSMENT 4 CHANGE END
 }

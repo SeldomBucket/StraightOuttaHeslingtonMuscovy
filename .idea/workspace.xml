@@ -2,71 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccf10ab7-c7f1-4f07-8d0b-48a96b9ce2ab" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Merganser2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/.classpath" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/.project" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/.settings/com.google.gdt.eclipse.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/.settings/gradle/org.springsource.ide.eclipse.gradle.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/.settings/gradle/org.springsource.ide.eclipse.gradle.refresh.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/html.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/src/com/mygdx/game/GdxDefinition.gwt.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/src/com/mygdx/game/GdxDefinitionSuperdev.gwt.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/src/com/mygdx/game/client/HtmlLauncher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/classes/com/mygdx/game/GdxDefinition.gwt.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/classes/com/mygdx/game/GdxDefinitionSuperdev.gwt.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/classes/com/mygdx/game/client/HtmlLauncher.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/artemis-odb-0.10.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/ashley-1.6.0-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/ashley-1.6.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/box2dlights-1.4-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/box2dlights-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/core-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/gdx-1.7.1-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/gdx-1.7.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/gdx-ai-1.6.0-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/gdx-ai-1.6.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/gdx-backend-gwt-1.7.1-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/gdx-backend-gwt-1.7.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/gdx-box2d-1.7.1-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/gdx-box2d-1.7.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/gdx-box2d-gwt-1.7.1-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/gdx-controllers-1.7.1-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/gdx-controllers-1.7.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/gdx-controllers-gwt-1.7.1-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/gdx-controllers-gwt-1.7.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/gdx-freetype-1.7.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/gwt-servlet-2.6.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/gwt-user-2.6.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/json-20090211.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/libgdx-utils-0.13.1-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/libgdx-utils-0.13.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/libgdx-utils-box2d-0.13.1-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/libgdx-utils-box2d-0.13.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/overlap2d-runtime-libgdx-0.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/validation-api-1.0.0.GA-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/validation-api-1.0.0.GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/vis-runtime-0.2.1-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/vis-runtime-0.2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/vis-ui-0.9.2-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/lib/vis-ui-0.9.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/refresh.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/soundmanager2-jsmin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/soundmanager2-setup.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/war/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/webapp/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/webapp/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/webapp/refresh.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/webapp/soundmanager2-jsmin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/webapp/soundmanager2-setup.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/webapp/styles.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/Agent.java" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/Agent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/GameWorld.java" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/GameWorld.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/Statistics.java" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/Statistics.java" />
     </list>
     <ignored path="MuscovyGame3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,63 +44,122 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Location.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Location.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Player.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.44701988">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UICurrentLocation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/UI/UICurrentLocation.java">
+      <file leaf-file-name="GameWorld.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/GameWorld.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
+              <caret line="204" column="17" selection-start-line="204" selection-start-column="17" selection-end-line="204" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Level.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Level.java">
+      <file leaf-file-name="Agent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Agent.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="99" column="9" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InputHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/input/InputHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="93" column="7" selection-start-line="93" selection-start-column="7" selection-end-line="93" selection-end-column="7" />
+              <caret line="175" column="23" selection-start-line="175" selection-start-column="23" selection-end-line="175" selection-end-column="23" />
               <folding>
-                <element signature="class#inputType#0;class#InputHandler#0" expanded="false" />
+                <element signature="e#4504#4505#0" expanded="true" />
+                <element signature="e#4551#4552#0" expanded="true" />
+                <element signature="e#4591#4592#0" expanded="true" />
+                <element signature="e#4640#4641#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Statistics.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Statistics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.277311">
+              <caret line="168" column="22" selection-start-line="168" selection-start-column="22" selection-end-line="168" selection-end-column="22" />
+              <folding>
+                <element signature="e#3334#3335#0" expanded="true" />
+                <element signature="e#3362#3363#0" expanded="true" />
+                <element signature="e#3391#3392#0" expanded="true" />
+                <element signature="e#3419#3420#0" expanded="true" />
+                <element signature="e#3448#3449#0" expanded="true" />
+                <element signature="e#3476#3477#0" expanded="true" />
+                <element signature="e#3508#3509#0" expanded="true" />
+                <element signature="e#3539#3540#0" expanded="true" />
+                <element signature="e#3572#3573#0" expanded="true" />
+                <element signature="e#3604#3605#0" expanded="true" />
+                <element signature="e#3640#3641#0" expanded="true" />
+                <element signature="e#3675#3676#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BattleParameters.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleParameters.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="skills.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/assets/skills.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="60.851852">
+              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BattleScreen.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="340" column="0" selection-start-line="340" selection-start-column="0" selection-end-line="340" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="party.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/assets/party.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.666667">
+              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BattleMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-224.52942">
+              <caret line="459" column="21" selection-start-line="459" selection-start-column="21" selection-end-line="459" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UseSkill.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/UseSkill.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="102" column="20" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
+              <folding>
+                <element signature="e#2948#2949#0" expanded="true" />
+                <element signature="e#2992#2993#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1179,6 +1176,9 @@
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/Level.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/UI/UICurrentLocation.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/Statistics.java" />
+        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/Agent.java" />
+        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/GameWorld.java" />
       </list>
     </option>
   </component>
@@ -1325,6 +1325,76 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MuscovyGame3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MuscovyGame3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="battle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MuscovyGame3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MuscovyGame3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MuscovyGame3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MuscovyGame3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1638,7 +1708,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="1" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1647,16 +1717,16 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32017076" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32017076" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18854167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991462" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1669,7 +1739,17 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleScreen.java</url>
+          <line>346</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1697,7 +1777,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1705,7 +1787,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="99" column="9" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
-          <folding />
+          <folding>
+            <element signature="e#0#6379#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1714,7 +1799,84 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="93" column="7" selection-start-line="93" selection-start-column="7" selection-end-line="93" selection-end-column="7" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#11425#11426#0" expanded="false" />
+            <element signature="e#11457#11458#0" expanded="false" />
+            <element signature="e#11504#11505#0" expanded="false" />
+            <element signature="e#11540#11541#0" expanded="false" />
+            <element signature="e#11585#11586#0" expanded="false" />
+            <element signature="e#11619#11620#0" expanded="false" />
+            <element signature="e#11668#11669#0" expanded="false" />
+            <element signature="e#11706#11707#0" expanded="false" />
+            <element signature="e#11752#11753#0" expanded="false" />
+            <element signature="e#11787#11788#0" expanded="false" />
+            <element signature="e#11837#11838#0" expanded="false" />
+            <element signature="e#11876#11877#0" expanded="false" />
+            <element signature="e#11921#11922#0" expanded="false" />
+            <element signature="e#11955#11956#0" expanded="false" />
+            <element signature="e#12004#12005#0" expanded="false" />
+            <element signature="e#12042#12043#0" expanded="false" />
+            <element signature="e#12155#12156#0" expanded="false" />
+            <element signature="e#12192#12193#0" expanded="false" />
+            <element signature="e#12369#12370#0" expanded="false" />
+            <element signature="e#12397#12398#0" expanded="false" />
+            <element signature="e#12481#12482#0" expanded="false" />
+            <element signature="e#12513#12514#0" expanded="false" />
+            <element signature="e#12558#12559#0" expanded="false" />
+            <element signature="e#12586#12587#0" expanded="false" />
+            <element signature="e#12635#12636#0" expanded="false" />
+            <element signature="e#12667#12668#0" expanded="false" />
+            <element signature="e#12716#12717#0" expanded="false" />
+            <element signature="e#12748#12749#0" expanded="false" />
+            <element signature="e#12801#12802#0" expanded="false" />
+            <element signature="e#12837#12838#0" expanded="false" />
             <element signature="class#inputType#0;class#InputHandler#0" expanded="false" />
+            <element signature="e#13027#13028#0" expanded="false" />
+            <element signature="e#13062#13063#0" expanded="false" />
+            <element signature="e#13111#13112#0" expanded="false" />
+            <element signature="e#13150#13151#0" expanded="false" />
+            <element signature="e#13191#13192#0" expanded="false" />
+            <element signature="e#13222#13223#0" expanded="false" />
+            <element signature="e#13267#13268#0" expanded="false" />
+            <element signature="e#13302#13303#0" expanded="false" />
+            <element signature="e#13343#13344#0" expanded="false" />
+            <element signature="e#13374#13375#0" expanded="false" />
+            <element signature="e#13419#13420#0" expanded="false" />
+            <element signature="e#13454#13455#0" expanded="false" />
+            <element signature="e#13495#13496#0" expanded="false" />
+            <element signature="e#13526#13527#0" expanded="false" />
+            <element signature="e#13571#13572#0" expanded="false" />
+            <element signature="e#13606#13607#0" expanded="false" />
+            <element signature="e#13647#13648#0" expanded="false" />
+            <element signature="e#13678#13679#0" expanded="false" />
+            <element signature="e#13723#13724#0" expanded="false" />
+            <element signature="e#13758#13759#0" expanded="false" />
+            <element signature="e#13805#13806#0" expanded="false" />
+            <element signature="e#13842#13843#0" expanded="false" />
+            <element signature="e#13893#13894#0" expanded="false" />
+            <element signature="e#13934#13935#0" expanded="false" />
+            <element signature="e#13983#13984#0" expanded="false" />
+            <element signature="e#14022#14023#0" expanded="false" />
+            <element signature="e#14075#14076#0" expanded="false" />
+            <element signature="e#14118#14119#0" expanded="false" />
+            <element signature="e#14167#14168#0" expanded="false" />
+            <element signature="e#14206#14207#0" expanded="false" />
+            <element signature="e#14259#14260#0" expanded="false" />
+            <element signature="e#14302#14303#0" expanded="false" />
+            <element signature="e#14352#14353#0" expanded="false" />
+            <element signature="e#14392#14393#0" expanded="false" />
+            <element signature="e#14446#14447#0" expanded="false" />
+            <element signature="e#14490#14491#0" expanded="false" />
+            <element signature="e#14535#14536#0" expanded="false" />
+            <element signature="e#14570#14571#0" expanded="false" />
+            <element signature="e#14619#14620#0" expanded="false" />
+            <element signature="e#14658#14659#0" expanded="false" />
+            <element signature="e#14703#14704#0" expanded="false" />
+            <element signature="e#14738#14739#0" expanded="false" />
+            <element signature="e#14788#14789#0" expanded="false" />
+            <element signature="e#14827#14828#0" expanded="false" />
+            <element signature="e#16545#16546#0" expanded="false" />
+            <element signature="e#16580#16581#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1732,7 +1894,84 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="93" column="7" selection-start-line="93" selection-start-column="7" selection-end-line="93" selection-end-column="7" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#11425#11426#0" expanded="false" />
+            <element signature="e#11457#11458#0" expanded="false" />
+            <element signature="e#11504#11505#0" expanded="false" />
+            <element signature="e#11540#11541#0" expanded="false" />
+            <element signature="e#11585#11586#0" expanded="false" />
+            <element signature="e#11619#11620#0" expanded="false" />
+            <element signature="e#11668#11669#0" expanded="false" />
+            <element signature="e#11706#11707#0" expanded="false" />
+            <element signature="e#11752#11753#0" expanded="false" />
+            <element signature="e#11787#11788#0" expanded="false" />
+            <element signature="e#11837#11838#0" expanded="false" />
+            <element signature="e#11876#11877#0" expanded="false" />
+            <element signature="e#11921#11922#0" expanded="false" />
+            <element signature="e#11955#11956#0" expanded="false" />
+            <element signature="e#12004#12005#0" expanded="false" />
+            <element signature="e#12042#12043#0" expanded="false" />
+            <element signature="e#12155#12156#0" expanded="false" />
+            <element signature="e#12192#12193#0" expanded="false" />
+            <element signature="e#12369#12370#0" expanded="false" />
+            <element signature="e#12397#12398#0" expanded="false" />
+            <element signature="e#12481#12482#0" expanded="false" />
+            <element signature="e#12513#12514#0" expanded="false" />
+            <element signature="e#12558#12559#0" expanded="false" />
+            <element signature="e#12586#12587#0" expanded="false" />
+            <element signature="e#12635#12636#0" expanded="false" />
+            <element signature="e#12667#12668#0" expanded="false" />
+            <element signature="e#12716#12717#0" expanded="false" />
+            <element signature="e#12748#12749#0" expanded="false" />
+            <element signature="e#12801#12802#0" expanded="false" />
+            <element signature="e#12837#12838#0" expanded="false" />
             <element signature="class#inputType#0;class#InputHandler#0" expanded="false" />
+            <element signature="e#13027#13028#0" expanded="false" />
+            <element signature="e#13062#13063#0" expanded="false" />
+            <element signature="e#13111#13112#0" expanded="false" />
+            <element signature="e#13150#13151#0" expanded="false" />
+            <element signature="e#13191#13192#0" expanded="false" />
+            <element signature="e#13222#13223#0" expanded="false" />
+            <element signature="e#13267#13268#0" expanded="false" />
+            <element signature="e#13302#13303#0" expanded="false" />
+            <element signature="e#13343#13344#0" expanded="false" />
+            <element signature="e#13374#13375#0" expanded="false" />
+            <element signature="e#13419#13420#0" expanded="false" />
+            <element signature="e#13454#13455#0" expanded="false" />
+            <element signature="e#13495#13496#0" expanded="false" />
+            <element signature="e#13526#13527#0" expanded="false" />
+            <element signature="e#13571#13572#0" expanded="false" />
+            <element signature="e#13606#13607#0" expanded="false" />
+            <element signature="e#13647#13648#0" expanded="false" />
+            <element signature="e#13678#13679#0" expanded="false" />
+            <element signature="e#13723#13724#0" expanded="false" />
+            <element signature="e#13758#13759#0" expanded="false" />
+            <element signature="e#13805#13806#0" expanded="false" />
+            <element signature="e#13842#13843#0" expanded="false" />
+            <element signature="e#13893#13894#0" expanded="false" />
+            <element signature="e#13934#13935#0" expanded="false" />
+            <element signature="e#13983#13984#0" expanded="false" />
+            <element signature="e#14022#14023#0" expanded="false" />
+            <element signature="e#14075#14076#0" expanded="false" />
+            <element signature="e#14118#14119#0" expanded="false" />
+            <element signature="e#14167#14168#0" expanded="false" />
+            <element signature="e#14206#14207#0" expanded="false" />
+            <element signature="e#14259#14260#0" expanded="false" />
+            <element signature="e#14302#14303#0" expanded="false" />
+            <element signature="e#14352#14353#0" expanded="false" />
+            <element signature="e#14392#14393#0" expanded="false" />
+            <element signature="e#14446#14447#0" expanded="false" />
+            <element signature="e#14490#14491#0" expanded="false" />
+            <element signature="e#14535#14536#0" expanded="false" />
+            <element signature="e#14570#14571#0" expanded="false" />
+            <element signature="e#14619#14620#0" expanded="false" />
+            <element signature="e#14658#14659#0" expanded="false" />
+            <element signature="e#14703#14704#0" expanded="false" />
+            <element signature="e#14738#14739#0" expanded="false" />
+            <element signature="e#14788#14789#0" expanded="false" />
+            <element signature="e#14827#14828#0" expanded="false" />
+            <element signature="e#16545#16546#0" expanded="false" />
+            <element signature="e#16580#16581#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1749,7 +1988,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1757,6 +1998,68 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="99" column="9" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#6379#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4304636">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/assets/skills.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="60.851852">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/UseSkill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="102" column="20" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
+          <folding>
+            <element signature="e#2948#2949#0" expanded="true" />
+            <element signature="e#2992#2993#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-224.52942">
+          <caret line="459" column="21" selection-start-line="459" selection-start-column="21" selection-end-line="459" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="340" column="0" selection-start-line="340" selection-start-column="0" selection-end-line="340" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/assets/party.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.666667">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleParameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -1764,16 +2067,50 @@
     <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Agent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.44701988">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="175" column="23" selection-start-line="175" selection-start-column="23" selection-end-line="175" selection-end-column="23" />
+          <folding>
+            <element signature="e#4504#4505#0" expanded="true" />
+            <element signature="e#4551#4552#0" expanded="true" />
+            <element signature="e#4591#4592#0" expanded="true" />
+            <element signature="e#4640#4641#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/GameWorld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="204" column="17" selection-start-line="204" selection-start-column="17" selection-end-line="204" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Statistics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.277311">
+          <caret line="168" column="22" selection-start-line="168" selection-start-column="22" selection-end-line="168" selection-end-column="22" />
+          <folding>
+            <element signature="e#3334#3335#0" expanded="true" />
+            <element signature="e#3362#3363#0" expanded="true" />
+            <element signature="e#3391#3392#0" expanded="true" />
+            <element signature="e#3419#3420#0" expanded="true" />
+            <element signature="e#3448#3449#0" expanded="true" />
+            <element signature="e#3476#3477#0" expanded="true" />
+            <element signature="e#3508#3509#0" expanded="true" />
+            <element signature="e#3539#3540#0" expanded="true" />
+            <element signature="e#3572#3573#0" expanded="true" />
+            <element signature="e#3604#3605#0" expanded="true" />
+            <element signature="e#3640#3641#0" expanded="true" />
+            <element signature="e#3675#3676#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

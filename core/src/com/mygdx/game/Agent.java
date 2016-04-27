@@ -115,7 +115,6 @@ public class Agent implements Comparable<Agent>{
         return skills;
     }
 
-
     public String getName() {
         return name;
     }
@@ -172,4 +171,13 @@ public class Agent implements Comparable<Agent>{
         this.isDemented = demented;
     }
     //Change end
+
+    //ASSESSMENT 4 CHANGE (S2)
+    public void activatePowerCheat(){
+        this.stats.activatePowerCheat();
+    }
+    public void deactivatePowerCheat(){
+        this.stats.deactivatePowerCheat();
+    }
+    //ASSESSMENT 4 CHANGE END
 }

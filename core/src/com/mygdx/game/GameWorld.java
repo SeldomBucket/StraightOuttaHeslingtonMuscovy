@@ -92,13 +92,8 @@ public class GameWorld {
                     for(int i=0;i<random.nextInt(3)+1;i++){
                         Agent thisAgent = Game.enemies.getMember(random.nextInt(Game.enemies.size()));
                         Statistics thisAgentStats = thisAgent.getStats();
-
                         Statistics newStats;
-                        if(level.player.isPowerCheatActive()){
-                            newStats = new Statistics(thisAgentStats.getMaxHP(),thisAgentStats.getMaxMP(),thisAgentStats.getSpeed(),thisAgentStats.getStrength()+2,thisAgentStats.getDexterity()+2,thisAgentStats.getIntelligence()+2,thisAgentStats.getBaseArmourVal(),thisAgentStats.getExperience(),thisAgentStats.getCurrentLevel());
-                        }else{
-                            newStats = new Statistics(thisAgentStats.getMaxHP(),thisAgentStats.getMaxMP(),thisAgentStats.getSpeed(),thisAgentStats.getStrength(),thisAgentStats.getDexterity(),thisAgentStats.getIntelligence(),thisAgentStats.getBaseArmourVal(),thisAgentStats.getExperience(),thisAgentStats.getCurrentLevel());
-                        }
+                        newStats = new Statistics(thisAgentStats.getMaxHP(),thisAgentStats.getMaxMP(),thisAgentStats.getSpeed(),thisAgentStats.getStrength(),thisAgentStats.getDexterity(),thisAgentStats.getIntelligence(),thisAgentStats.getBaseArmourVal(),thisAgentStats.getExperience(),thisAgentStats.getCurrentLevel());
                         params.addEnemy(new Agent(thisAgent.getName(), thisAgent.getType(), newStats, thisAgent.getSkills(), thisAgent.getCurrentEquipment(), thisAgent.getTexture(), thisAgent.getDemented()));
                     }
 
@@ -187,6 +182,11 @@ public class GameWorld {
                 if (game.wonBattle) {
                     uiManager.addNotification("You won the battle!");
                     //ASSESSMENT 4 CHANGE (S2)
+                    if (level.player.isPowerCheatActive()){
+                        for (int i = 0; i<4; i++){
+                            Game.party.getMember(i).deactivatePowerCheat();
+                        }
+                    }
                     level.player.deactivatePowerCheat();
                     //ASSESSMENT 4 CHANGE END
                     //ASSESSMENT 3 changes (10)
@@ -208,7 +208,12 @@ public class GameWorld {
                         uiManager.addNotification("SPEED CHEAT ACTIVATED FOR 30s");
                     }else if (cheatState == 16){
                         uiManager.addNotification("POWER CHEAT ACTIVATED UNTIL END OF NEXT BATTLE");
-                        level.player.activatePowerCheat();
+                        if(!level.player.isPowerCheatActive()){
+                            for (int i = 0; i<4; i++){
+                                Game.party.getMember(i).activatePowerCheat();
+                            }
+                            level.player.activatePowerCheat();
+                        }
                         //DO THE POWER CHEAT
                     }
                     cheatState = 0;
