@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ccf10ab7-c7f1-4f07-8d0b-48a96b9ce2ab" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/Agent.java" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/Agent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/GameWorld.java" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/GameWorld.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/Statistics.java" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/Statistics.java" />
-    </list>
+    <list default="true" id="407d2d79-1b02-420a-9e9c-5c2cb0ab4532" name="Default" comment="" />
     <ignored path="MuscovyGame3.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/core/.gradle/" />
@@ -13,8 +9,6 @@
     <ignored path="$PROJECT_DIR$/html/.gradle/" />
     <ignored path="$PROJECT_DIR$/html/build/" />
     <ignored path="$PROJECT_DIR$/build/" />
-    <ignored path="$PROJECT_DIR$/core/build/" />
-    <ignored path="$PROJECT_DIR$/desktop/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,134 +35,6 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="MuscovyGame3" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameWorld.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/GameWorld.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="204" column="17" selection-start-line="204" selection-start-column="17" selection-end-line="204" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Agent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Agent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="175" column="23" selection-start-line="175" selection-start-column="23" selection-end-line="175" selection-end-column="23" />
-              <folding>
-                <element signature="e#4504#4505#0" expanded="true" />
-                <element signature="e#4551#4552#0" expanded="true" />
-                <element signature="e#4591#4592#0" expanded="true" />
-                <element signature="e#4640#4641#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Statistics.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Statistics.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.277311">
-              <caret line="168" column="22" selection-start-line="168" selection-start-column="22" selection-end-line="168" selection-end-column="22" />
-              <folding>
-                <element signature="e#3334#3335#0" expanded="true" />
-                <element signature="e#3362#3363#0" expanded="true" />
-                <element signature="e#3391#3392#0" expanded="true" />
-                <element signature="e#3419#3420#0" expanded="true" />
-                <element signature="e#3448#3449#0" expanded="true" />
-                <element signature="e#3476#3477#0" expanded="true" />
-                <element signature="e#3508#3509#0" expanded="true" />
-                <element signature="e#3539#3540#0" expanded="true" />
-                <element signature="e#3572#3573#0" expanded="true" />
-                <element signature="e#3604#3605#0" expanded="true" />
-                <element signature="e#3640#3641#0" expanded="true" />
-                <element signature="e#3675#3676#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BattleParameters.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleParameters.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="skills.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/assets/skills.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="60.851852">
-              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BattleScreen.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleScreen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="340" column="0" selection-start-line="340" selection-start-column="0" selection-end-line="340" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="party.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/assets/party.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.666667">
-              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BattleMenu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-224.52942">
-              <caret line="459" column="21" selection-start-line="459" selection-start-column="21" selection-end-line="459" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UseSkill.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/UseSkill.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="102" column="20" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
-              <folding>
-                <element signature="e#2948#2949#0" expanded="true" />
-                <element signature="e#2992#2993#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="availableProjects">
@@ -382,77 +248,6 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="run" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="addSource" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the GWT compiler to validate the relevant sources" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="checkGwt" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the GWT compiler to translate Java sources to JavaScript for production ready output" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileGwt" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the GWT compiler to produce draft quality output used for development" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="draftCompileGwt" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="draftRun" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Creates a war using the output of the task draftCompileGwt" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="draftWar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateGdt" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the GWT development mode" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="gwtDev" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the GWT super dev mode" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="gwtSuperDev" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uses your files as and where they are and deploys them to Jetty." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="jettyRun" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the webapp into a war and deploys it to Jetty." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="jettyRunWar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Stops Jetty." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="jettyStop" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="superDev" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates a war archive with all the compiled classes, the web-app content and the libraries." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="war" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Creates an exploded web application template to be used by GWT dev mode and eclipse to ensure src/main/webapp stays clean" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="warTemplate" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -790,80 +585,13 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="addSource" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the GWT compiler to validate the relevant sources" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="checkGwt" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'main'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Cleans all Eclipse files." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
                 <option name="name" value="cleanEclipse" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="cleanEclipseClasspath" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="cleanEclipseJdt" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
                 <option name="name" value="cleanEclipseProject" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the GWT compiler to translate Java sources to JavaScript for production ready output" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="compileGwt" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'main:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'test:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="compileTestJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the components produced by project ':html'. [incubating]" />
@@ -881,37 +609,9 @@
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="dist" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the GWT compiler to produce draft quality output used for development" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="draftCompileGwt" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="draftRun" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Creates a war using the output of the task draftCompileGwt" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="draftWar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Generates all Eclipse files." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
                 <option name="name" value="eclipse" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Eclipse classpath file." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="eclipseClasspath" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Eclipse JDT settings file." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="eclipseJdt" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates the Eclipse project file." />
@@ -919,63 +619,14 @@
                 <option name="name" value="eclipseProject" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="generateGdt" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the GWT development mode" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="gwtDev" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the GWT super dev mode" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="gwtSuperDev" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Displays a help message." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
                 <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uses your files as and where they are and deploys them to Jetty." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="jettyRun" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the webapp into a war and deploys it to Jetty." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="jettyRunWar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Stops Jetty." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="jettyStop" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Displays the configuration model of project ':html'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
                 <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes JVM resources 'main:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes JVM resources 'test:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="processTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the sub-projects of project ':html'." />
@@ -988,33 +639,9 @@
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="superDev" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Displays the tasks runnable from project ':html'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
                 <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'test'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates a war archive with all the compiled classes, the web-app content and the libraries." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="war" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Creates an exploded web application template to be used by GWT dev mode and eclipse to ensure src/main/webapp stays clean" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/html" />
-                <option name="name" value="warTemplate" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -1024,7 +651,7 @@
     <option name="modificationStamps">
       <map>
         <entry key="$PROJECT_DIR$/../MuscovyGame2" value="7268738519582" />
-        <entry key="$PROJECT_DIR$" value="7308053980731" />
+        <entry key="$PROJECT_DIR$" value="5846533343705" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1115,36 +742,6 @@
                           <list>
                             <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/de.richsource.gradle.plugins/gwt-gradle-plugin/0.6/e38b28f04aaf547e992a4f68113e4274a0dceafb/gwt-gradle-plugin-0.6-sources.jar" />
                             <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/de.richsource.gradle.plugins/gwt-gradle-plugin/0.6/7393243331d33bbf6fde148da090500249be9e53/gwt-gradle-plugin-0.6.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-gwt/1.7.1/141af799388ee31daa41bd39347f5f51d2078a33/gdx-backend-gwt-1.7.1.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-gwt/1.7.1/8bfe6deb0fea16186ead56444a65e85cd34ad453/gdx-backend-gwt-1.7.1-sources.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.7.1/a1fd092a4cdeb029ddb205805143a26545de1e6b/gdx-1.7.1-sources.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.7.1/2179cc613447c297623a4a6d2ba6692c3aaff804/gdx-1.7.1.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-box2d/1.7.1/13f2241b3ab821dbad64292ad7180d5d14a32ed1/gdx-box2d-1.7.1-sources.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-box2d/1.7.1/fd23897393900f8f888222795e3229eff600fb3d/gdx-box2d-1.7.1.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-box2d-gwt/1.7.1/6c16effba95b2d7885dafda3eb099edfd76f3619/gdx-box2d-gwt-1.7.1-sources.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.badlogicgames.ashley/ashley/1.6.0/d99eb702d4c96adf1c622ee02188accdcf51172d/ashley-1.6.0-sources.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.badlogicgames.ashley/ashley/1.6.0/f7b513df3e52198ecda822eea1674f488d7352a5/ashley-1.6.0.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.badlogicgames.box2dlights/box2dlights/1.4/57a1f15112328706c648a430bd19574118e2d8f4/box2dlights-1.4-sources.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.badlogicgames.box2dlights/box2dlights/1.4/3d77ad5b4164fb32fc67e2446e35911bb0aaf0bd/box2dlights-1.4.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-ai/1.6.0/f4b4fbf6f99dde5ced03cc360b66da4d3295ff98/gdx-ai-1.6.0-sources.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-ai/1.6.0/a1a3b25a3485affab88be13ab8c1a920537f7d8c/gdx-ai-1.6.0.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-controllers/1.7.1/1b07a9a44f722381da9bf3c7ef0d54b9c93b17e2/gdx-controllers-1.7.1-sources.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-controllers/1.7.1/74f9953d61110e1b80a01a6bd6dcd057cdfe0a91/gdx-controllers-1.7.1.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-controllers-gwt/1.7.1/e683125b3282d6c402626f4577e8914e392719c7/gdx-controllers-gwt-1.7.1.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-controllers-gwt/1.7.1/d003484a2e48b4ba546b84dc2c591605a331accc/gdx-controllers-gwt-1.7.1-sources.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.kotcrab.vis/vis-ui/0.9.2/d1cc80415239cd81fd851383fb798b4e376cb2c4/vis-ui-0.9.2-sources.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.kotcrab.vis/vis-ui/0.9.2/f62550624f4f896b79ae6975f63137784b8b4f5d/vis-ui-0.9.2.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.kotcrab.vis/vis-runtime/0.2.1/1a3c8c9d34b292d6f9a2031a9d419ac0189fea15/vis-runtime-0.2.1-sources.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.kotcrab.vis/vis-runtime/0.2.1/798593a52ec6b0feea25f70fdce594abad3e067e/vis-runtime-0.2.1.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/net.dermetfan.libgdx-utils/libgdx-utils/0.13.1/27d1f2c16b516285616240047fc004b0c1ee495c/libgdx-utils-0.13.1-sources.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/net.dermetfan.libgdx-utils/libgdx-utils/0.13.1/9bbbd576ea6518e0441465261bfe10660b06beea/libgdx-utils-0.13.1.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/net.dermetfan.libgdx-utils/libgdx-utils-box2d/0.13.1/b3f373d955e210d7a3ea67ba91b15bfad4737bbf/libgdx-utils-box2d-0.13.1-sources.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/net.dermetfan.libgdx-utils/libgdx-utils-box2d/0.13.1/cbc08bd9e488ac53ce9de3692525bec6e38b6811/libgdx-utils-box2d-0.13.1.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-user/2.6.1/c078b1b8cc0281214b0eb458d2c283d039374fad/gwt-user-2.6.1.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/net.onedaybeard.artemis/artemis-odb/0.10.2/92df3dab581d2e5ce1c685500104bb5a310a99d0/artemis-odb-0.10.2.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.0.0.GA/b6bd7f9d78f6fdaa3c37dae18a4bd298915f328e/validation-api-1.0.0.GA.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.0.0.GA/7a561191db2203550fbfa40d534d4997624cd369/validation-api-1.0.0.GA-sources.jar" />
-                            <option value="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.json/json/20090211/c183aa3a2a6250293808bba12262c8920ce5a51c/json-20090211.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/html" />
@@ -1167,19 +764,6 @@
     </option>
     <option name="externalProjectsViewState">
       <projects_view />
-    </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/Location.java" />
-        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/Level.java" />
-        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/UI/UICurrentLocation.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/Statistics.java" />
-        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/Agent.java" />
-        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/GameWorld.java" />
-      </list>
     </option>
   </component>
   <component name="MavenImportPreferences">
@@ -1219,6 +803,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -1274,138 +860,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MuscovyGame3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MuscovyGame3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MuscovyGame3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MuscovyGame3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MuscovyGame3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MuscovyGame3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MuscovyGame3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MuscovyGame3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="battle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MuscovyGame3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MuscovyGame3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MuscovyGame3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MuscovyGame3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Application.DesktopLauncher">
     <configuration default="false" name="DesktopLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -1694,425 +1151,53 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ccf10ab7-c7f1-4f07-8d0b-48a96b9ce2ab" name="Default" comment="" />
-      <created>1461611199953</created>
+      <changelist id="407d2d79-1b02-420a-9e9c-5c2cb0ab4532" name="Default" comment="" />
+      <created>1461719063604</created>
       <option name="number" value="Default" />
-      <updated>1461611199953</updated>
+      <updated>1461719063604</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="1" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32017076" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18854167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991462" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleScreen.java</url>
-          <line>346</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="5" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Location.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/UI/UICurrentLocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Level.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="99" column="9" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#6379#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/input/InputHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="93" column="7" selection-start-line="93" selection-start-column="7" selection-end-line="93" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#11425#11426#0" expanded="false" />
-            <element signature="e#11457#11458#0" expanded="false" />
-            <element signature="e#11504#11505#0" expanded="false" />
-            <element signature="e#11540#11541#0" expanded="false" />
-            <element signature="e#11585#11586#0" expanded="false" />
-            <element signature="e#11619#11620#0" expanded="false" />
-            <element signature="e#11668#11669#0" expanded="false" />
-            <element signature="e#11706#11707#0" expanded="false" />
-            <element signature="e#11752#11753#0" expanded="false" />
-            <element signature="e#11787#11788#0" expanded="false" />
-            <element signature="e#11837#11838#0" expanded="false" />
-            <element signature="e#11876#11877#0" expanded="false" />
-            <element signature="e#11921#11922#0" expanded="false" />
-            <element signature="e#11955#11956#0" expanded="false" />
-            <element signature="e#12004#12005#0" expanded="false" />
-            <element signature="e#12042#12043#0" expanded="false" />
-            <element signature="e#12155#12156#0" expanded="false" />
-            <element signature="e#12192#12193#0" expanded="false" />
-            <element signature="e#12369#12370#0" expanded="false" />
-            <element signature="e#12397#12398#0" expanded="false" />
-            <element signature="e#12481#12482#0" expanded="false" />
-            <element signature="e#12513#12514#0" expanded="false" />
-            <element signature="e#12558#12559#0" expanded="false" />
-            <element signature="e#12586#12587#0" expanded="false" />
-            <element signature="e#12635#12636#0" expanded="false" />
-            <element signature="e#12667#12668#0" expanded="false" />
-            <element signature="e#12716#12717#0" expanded="false" />
-            <element signature="e#12748#12749#0" expanded="false" />
-            <element signature="e#12801#12802#0" expanded="false" />
-            <element signature="e#12837#12838#0" expanded="false" />
-            <element signature="class#inputType#0;class#InputHandler#0" expanded="false" />
-            <element signature="e#13027#13028#0" expanded="false" />
-            <element signature="e#13062#13063#0" expanded="false" />
-            <element signature="e#13111#13112#0" expanded="false" />
-            <element signature="e#13150#13151#0" expanded="false" />
-            <element signature="e#13191#13192#0" expanded="false" />
-            <element signature="e#13222#13223#0" expanded="false" />
-            <element signature="e#13267#13268#0" expanded="false" />
-            <element signature="e#13302#13303#0" expanded="false" />
-            <element signature="e#13343#13344#0" expanded="false" />
-            <element signature="e#13374#13375#0" expanded="false" />
-            <element signature="e#13419#13420#0" expanded="false" />
-            <element signature="e#13454#13455#0" expanded="false" />
-            <element signature="e#13495#13496#0" expanded="false" />
-            <element signature="e#13526#13527#0" expanded="false" />
-            <element signature="e#13571#13572#0" expanded="false" />
-            <element signature="e#13606#13607#0" expanded="false" />
-            <element signature="e#13647#13648#0" expanded="false" />
-            <element signature="e#13678#13679#0" expanded="false" />
-            <element signature="e#13723#13724#0" expanded="false" />
-            <element signature="e#13758#13759#0" expanded="false" />
-            <element signature="e#13805#13806#0" expanded="false" />
-            <element signature="e#13842#13843#0" expanded="false" />
-            <element signature="e#13893#13894#0" expanded="false" />
-            <element signature="e#13934#13935#0" expanded="false" />
-            <element signature="e#13983#13984#0" expanded="false" />
-            <element signature="e#14022#14023#0" expanded="false" />
-            <element signature="e#14075#14076#0" expanded="false" />
-            <element signature="e#14118#14119#0" expanded="false" />
-            <element signature="e#14167#14168#0" expanded="false" />
-            <element signature="e#14206#14207#0" expanded="false" />
-            <element signature="e#14259#14260#0" expanded="false" />
-            <element signature="e#14302#14303#0" expanded="false" />
-            <element signature="e#14352#14353#0" expanded="false" />
-            <element signature="e#14392#14393#0" expanded="false" />
-            <element signature="e#14446#14447#0" expanded="false" />
-            <element signature="e#14490#14491#0" expanded="false" />
-            <element signature="e#14535#14536#0" expanded="false" />
-            <element signature="e#14570#14571#0" expanded="false" />
-            <element signature="e#14619#14620#0" expanded="false" />
-            <element signature="e#14658#14659#0" expanded="false" />
-            <element signature="e#14703#14704#0" expanded="false" />
-            <element signature="e#14738#14739#0" expanded="false" />
-            <element signature="e#14788#14789#0" expanded="false" />
-            <element signature="e#14827#14828#0" expanded="false" />
-            <element signature="e#16545#16546#0" expanded="false" />
-            <element signature="e#16580#16581#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35840708">
-          <caret line="35" column="25" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/input/InputHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="93" column="7" selection-start-line="93" selection-start-column="7" selection-end-line="93" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#11425#11426#0" expanded="false" />
-            <element signature="e#11457#11458#0" expanded="false" />
-            <element signature="e#11504#11505#0" expanded="false" />
-            <element signature="e#11540#11541#0" expanded="false" />
-            <element signature="e#11585#11586#0" expanded="false" />
-            <element signature="e#11619#11620#0" expanded="false" />
-            <element signature="e#11668#11669#0" expanded="false" />
-            <element signature="e#11706#11707#0" expanded="false" />
-            <element signature="e#11752#11753#0" expanded="false" />
-            <element signature="e#11787#11788#0" expanded="false" />
-            <element signature="e#11837#11838#0" expanded="false" />
-            <element signature="e#11876#11877#0" expanded="false" />
-            <element signature="e#11921#11922#0" expanded="false" />
-            <element signature="e#11955#11956#0" expanded="false" />
-            <element signature="e#12004#12005#0" expanded="false" />
-            <element signature="e#12042#12043#0" expanded="false" />
-            <element signature="e#12155#12156#0" expanded="false" />
-            <element signature="e#12192#12193#0" expanded="false" />
-            <element signature="e#12369#12370#0" expanded="false" />
-            <element signature="e#12397#12398#0" expanded="false" />
-            <element signature="e#12481#12482#0" expanded="false" />
-            <element signature="e#12513#12514#0" expanded="false" />
-            <element signature="e#12558#12559#0" expanded="false" />
-            <element signature="e#12586#12587#0" expanded="false" />
-            <element signature="e#12635#12636#0" expanded="false" />
-            <element signature="e#12667#12668#0" expanded="false" />
-            <element signature="e#12716#12717#0" expanded="false" />
-            <element signature="e#12748#12749#0" expanded="false" />
-            <element signature="e#12801#12802#0" expanded="false" />
-            <element signature="e#12837#12838#0" expanded="false" />
-            <element signature="class#inputType#0;class#InputHandler#0" expanded="false" />
-            <element signature="e#13027#13028#0" expanded="false" />
-            <element signature="e#13062#13063#0" expanded="false" />
-            <element signature="e#13111#13112#0" expanded="false" />
-            <element signature="e#13150#13151#0" expanded="false" />
-            <element signature="e#13191#13192#0" expanded="false" />
-            <element signature="e#13222#13223#0" expanded="false" />
-            <element signature="e#13267#13268#0" expanded="false" />
-            <element signature="e#13302#13303#0" expanded="false" />
-            <element signature="e#13343#13344#0" expanded="false" />
-            <element signature="e#13374#13375#0" expanded="false" />
-            <element signature="e#13419#13420#0" expanded="false" />
-            <element signature="e#13454#13455#0" expanded="false" />
-            <element signature="e#13495#13496#0" expanded="false" />
-            <element signature="e#13526#13527#0" expanded="false" />
-            <element signature="e#13571#13572#0" expanded="false" />
-            <element signature="e#13606#13607#0" expanded="false" />
-            <element signature="e#13647#13648#0" expanded="false" />
-            <element signature="e#13678#13679#0" expanded="false" />
-            <element signature="e#13723#13724#0" expanded="false" />
-            <element signature="e#13758#13759#0" expanded="false" />
-            <element signature="e#13805#13806#0" expanded="false" />
-            <element signature="e#13842#13843#0" expanded="false" />
-            <element signature="e#13893#13894#0" expanded="false" />
-            <element signature="e#13934#13935#0" expanded="false" />
-            <element signature="e#13983#13984#0" expanded="false" />
-            <element signature="e#14022#14023#0" expanded="false" />
-            <element signature="e#14075#14076#0" expanded="false" />
-            <element signature="e#14118#14119#0" expanded="false" />
-            <element signature="e#14167#14168#0" expanded="false" />
-            <element signature="e#14206#14207#0" expanded="false" />
-            <element signature="e#14259#14260#0" expanded="false" />
-            <element signature="e#14302#14303#0" expanded="false" />
-            <element signature="e#14352#14353#0" expanded="false" />
-            <element signature="e#14392#14393#0" expanded="false" />
-            <element signature="e#14446#14447#0" expanded="false" />
-            <element signature="e#14490#14491#0" expanded="false" />
-            <element signature="e#14535#14536#0" expanded="false" />
-            <element signature="e#14570#14571#0" expanded="false" />
-            <element signature="e#14619#14620#0" expanded="false" />
-            <element signature="e#14658#14659#0" expanded="false" />
-            <element signature="e#14703#14704#0" expanded="false" />
-            <element signature="e#14738#14739#0" expanded="false" />
-            <element signature="e#14788#14789#0" expanded="false" />
-            <element signature="e#14827#14828#0" expanded="false" />
-            <element signature="e#16545#16546#0" expanded="false" />
-            <element signature="e#16580#16581#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Location.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/UI/UICurrentLocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Level.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="99" column="9" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#6379#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4304636">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/assets/skills.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="60.851852">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/UseSkill.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="102" column="20" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
-          <folding>
-            <element signature="e#2948#2949#0" expanded="true" />
-            <element signature="e#2992#2993#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-224.52942">
-          <caret line="459" column="21" selection-start-line="459" selection-start-column="21" selection-end-line="459" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="340" column="0" selection-start-line="340" selection-start-column="0" selection-end-line="340" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/assets/party.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.666667">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleParameters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Agent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="175" column="23" selection-start-line="175" selection-start-column="23" selection-end-line="175" selection-end-column="23" />
-          <folding>
-            <element signature="e#4504#4505#0" expanded="true" />
-            <element signature="e#4551#4552#0" expanded="true" />
-            <element signature="e#4591#4592#0" expanded="true" />
-            <element signature="e#4640#4641#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/GameWorld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="204" column="17" selection-start-line="204" selection-start-column="17" selection-end-line="204" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Statistics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.277311">
-          <caret line="168" column="22" selection-start-line="168" selection-start-column="22" selection-end-line="168" selection-end-column="22" />
-          <folding>
-            <element signature="e#3334#3335#0" expanded="true" />
-            <element signature="e#3362#3363#0" expanded="true" />
-            <element signature="e#3391#3392#0" expanded="true" />
-            <element signature="e#3419#3420#0" expanded="true" />
-            <element signature="e#3448#3449#0" expanded="true" />
-            <element signature="e#3476#3477#0" expanded="true" />
-            <element signature="e#3508#3509#0" expanded="true" />
-            <element signature="e#3539#3540#0" expanded="true" />
-            <element signature="e#3572#3573#0" expanded="true" />
-            <element signature="e#3604#3605#0" expanded="true" />
-            <element signature="e#3640#3641#0" expanded="true" />
-            <element signature="e#3675#3676#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

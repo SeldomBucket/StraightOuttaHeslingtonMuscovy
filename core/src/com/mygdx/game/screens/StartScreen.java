@@ -52,7 +52,7 @@ public class StartScreen extends ScreenAdapter {
         }
         black.fill();
 
-        //Assessment 4 change (num)
+        //Assessment 4 change (S3)
         //Added render lines for demented waterfowl mode text
         if (runningTime %1 > 0.5f) {
             Assets.consolas22.draw(batch, new GlyphLayout(Assets.consolas22, START_MESSAGE, Color.GRAY, Gdx.graphics.getWidth(), Align.center, false), 0, 200);
@@ -82,7 +82,7 @@ public class StartScreen extends ScreenAdapter {
         if (InputHandler.isActJustPressed()) {
             game.newWorldScreen();
         }
-        //Assessment 4 change (num)
+        //Assessment 4 change (S3)
         //Handler for toggling demented waterfowl mode on/off
         if (InputHandler.isEscJustPressed()) {
             game.setDementedWaterFowlMode();

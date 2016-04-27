@@ -53,8 +53,6 @@ public class BattleScreen extends ScreenAdapter {
     //agentAttacking stores whether or not a demented agent is currently making its multi-attacks
     boolean agentAttacking = false;
     boolean demented = false;
-    int ranTarget;
-    int ranSkill;
     int numAttacks;
     //change end
 
